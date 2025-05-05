@@ -266,19 +266,14 @@
                             <RowDefinition Height="*"/>
                         </Grid.RowDefinitions>
                         
-                        <!-- 功能按钮区域 -->
                         <StackPanel Orientation="Horizontal" Margin="10" Grid.Row="0">
-                            <Button Content="功能1" Width="120" Margin="0,0,10,0"
-                                    Style="{StaticResource {x:Type Button}}"/>
-                            <Button Content="功能2" Width="120"
-                                    Style="{StaticResource {x:Type Button}}"/>
+                            <Button Content="一键root" Width="120" Margin="0,0,10,0"
+                                    Style="{StaticResource {x:Type Button}}"
+                                    Click="Function1_Click"/>
+                            <Button Content="一键刷入TWRP" Width="120"
+                                    Style="{StaticResource {x:Type Button}}"
+                                    Click="Function2_Click"/>
                         </StackPanel>
-                        
-                        <!-- 占位内容区域 -->
-                        <ScrollViewer Grid.Row="1" Margin="10">
-                            <TextBlock Text="功能开发中..." Foreground="#FF888888"
-                                      HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                        </ScrollViewer>
                     </Grid>
                 </Border>
             </TabItem>

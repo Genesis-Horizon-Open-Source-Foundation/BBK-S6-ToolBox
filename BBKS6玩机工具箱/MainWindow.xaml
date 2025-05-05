@@ -1,0 +1,4 @@
+<Button Content="一键root" 
+        Click="Function1_Click"/>
+<Button Content="一键刷入TWRP"
+        Click="Function2_Click"/>

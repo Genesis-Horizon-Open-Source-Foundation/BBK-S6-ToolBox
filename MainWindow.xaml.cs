@@ -155,7 +155,7 @@ namespace BBKS6玩机工具箱
 
         private void MenuItem_About_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("BBKS6玩机工具箱 v1.0\n版权所有 © 2023", "关于");
+            MessageBox.Show("BBKS6玩机工具箱 v0.322\nAGPL - V3开源许可 © 2025", "关于");
         }
     }
 }
