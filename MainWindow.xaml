@@ -1,0 +1,248 @@
+﻿<Window x:Class="BBKS6玩机工具箱.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BBKS6玩机工具箱"
+        mc:Ignorable="d"
+        Title="BBKS6玩机工具箱--永久免费，严禁倒卖，倒卖将违反开源许可证" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen"
+        Background="#FFF5F5F5">
+    
+    <Window.Resources>
+        <Style TargetType="Menu">
+            <Setter Property="Background" Value="#FF3F51B5"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Height" Value="40"/>
+        </Style>
+        
+        <Style TargetType="TabControl">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Padding" Value="0"/>
+        </Style>
+        
+        <Style TargetType="TabItem">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Padding" Value="15 5"/>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Foreground" Value="#FF444444"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TabItem">
+                        <Border Name="Border" CornerRadius="4 4 0 0">
+                            <ContentPresenter ContentSource="Header" 
+                                              Margin="{TemplateBinding Padding}"
+                                              HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="#FFE8EAF6"/>
+                                <Setter Property="Foreground" Value="#FF3F51B5"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <DockPanel>
+        <!-- 菜单栏 -->
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="帮助">
+                <MenuItem Header="关于" Icon="ℹ️"/>
+            </MenuItem>
+        </Menu>
+
+        <!-- 标签页 -->
+        <TabControl>
+            <TabItem Header="🏠 首页">
+                <Border Background="White" CornerRadius="4" Margin="10">
+                    <Grid>
+                        <ScrollViewer VerticalScrollBarVisibility="Auto">
+                            <StackPanel Margin="20">
+                                <!-- 欢迎信息 -->
+                                <TextBlock Text="欢迎使用BBKS6玩机工具箱" 
+                                           FontSize="24" FontWeight="Bold" 
+                                           Foreground="#FF3F51B5" 
+                                           Margin="0,0,0,20"/>
+                                
+                                <!-- 作者信息 -->
+                                <TextBlock Text="作者信息" 
+                                           FontSize="16" FontWeight="Bold" 
+                                           Foreground="#FF3F51B5" 
+                                           Margin="0,0,0,10"/>
+                                <TextBlock Text="开发: huang1057" 
+                                           Margin="20,0,0,5"/>
+                                <TextBlock Text="联系方式: huang1057@outlook.com   https://ghteam.pages.dev" 
+                                           Margin="20,0,0,20"/>
+                                
+                                <!-- 感谢名单 -->
+                                <TextBlock Text="感谢名单" 
+                                           FontSize="16" FontWeight="Bold" 
+                                           Foreground="#FF3F51B5" 
+                                           Margin="0,0,0,10"/>
+                                <TextBlock Text="• 早茶光" 
+                                           Margin="20,0,0,5"/>
+                                <TextBlock Text="• A错误" 
+                                           Margin="20,0,0,5"/>
+                                <TextBlock Text="• Debian" 
+                                           Margin="20,0,0,20"/>
+                                <TextBlock Text="• 本程序中所使用的9008引导文件来自于超级步步高工具箱！" 
+                                           Margin="20,0,0,20"/>
+                                <TextBlock Text="• 超级步步高工具箱下载地址：https://www.eebbk.com.cn" 
+                                           Margin="20,0,0,20"/>
+                                <!-- 免责声明 -->
+                                <TextBlock Text="免责声明" 
+                                           FontSize="16" FontWeight="Bold" 
+                                           Foreground="#FF3F51B5" 
+                                           Margin="0,0,0,10"/>
+                                <TextBlock Text="1. 本软件仅供学习交流使用" 
+                                           Margin="20,0,0,5"/>
+                                <TextBlock Text="2. 使用本软件造成的任何后果由使用者自行承担，严禁对软件进行逆向工程等违规操作" 
+                                           Margin="20,0,0,5"/>
+                                <TextBlock Text="3. 请遵守当地法律法规,严禁将软件用于远程付费刷机、倒卖！！！" 
+                                           Margin="20,0,0,5"/>
+                                <TextBlock Text="4. 继续使用即表示您同意以上条款" 
+                                           Margin="20,0,0,5"/>
+                                <TextBlock Text="5. 部分资源来自其他作者，我们尊重原作者的权利！" 
+                                           Margin="20,0,0,5"/>
+                            </StackPanel>
+                        </ScrollViewer>
+                    </Grid>
+                </Border>
+            </TabItem>
+            <TabItem Header="📱 设备信息">
+                <Border Background="White" CornerRadius="4" Margin="10">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        
+                        <!-- 操作按钮区域 -->
+                        <StackPanel Orientation="Horizontal" Margin="10" Grid.Row="0">
+                            <Button Content="刷新设备信息（需设备已经开启了USB调试）" Width="120" Margin="0,0,10,0"
+                                    Style="{StaticResource {x:Type Button}}"/>
+                            <Button Content="导出设备信息" Width="120"
+                                    Style="{StaticResource {x:Type Button}}"/>
+                        </StackPanel>
+                        
+                        <!-- 设备信息显示区域 -->
+                        <ScrollViewer Grid.Row="1" Margin="10">
+                            <StackPanel>
+                                <TextBlock Text="设备基本信息" FontWeight="Bold" Margin="0,0,0,5"
+                                           Foreground="#FF3F51B5"/>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    
+                                    <TextBlock Text="设备型号:" Grid.Row="0" Grid.Column="0" Margin="0,0,10,5"
+                                               Foreground="#FF444444"/>
+                                    <TextBox Text="{Binding DeviceModel}" Grid.Row="0" Grid.Column="1" Margin="0,0,0,5" 
+                                             IsReadOnly="True" BorderBrush="#FFE8EAF6" Background="#FFF5F5F5"/>
+                                    
+                                    <!-- 其他文本框保持相同样式 -->
+                                    <TextBlock Text="Android版本:" Grid.Row="1" Grid.Column="0" Margin="0,0,10,5"
+                                               Foreground="#FF444444"/>
+                                    <TextBox Text="{Binding AndroidVersion}" Grid.Row="1" Grid.Column="1" Margin="0,0,0,5" 
+                                             IsReadOnly="True" BorderBrush="#FFE8EAF6" Background="#FFF5F5F5"/>
+                                    
+                                    <TextBlock Text="序列号:" Grid.Row="2" Grid.Column="0" Margin="0,0,10,5"
+                                               Foreground="#FF444444"/>
+                                    <TextBox Text="{Binding SerialNumber}" Grid.Row="2" Grid.Column="1" Margin="0,0,0,5" 
+                                             IsReadOnly="True" BorderBrush="#FFE8EAF6" Background="#FFF5F5F5"/>
+                                    
+                                    <TextBlock Text="CPU信息:" Grid.Row="3" Grid.Column="0" Margin="0,0,10,5"
+                                               Foreground="#FF444444"/>
+                                    <TextBox Text="{Binding CPUInfo}" Grid.Row="3" Grid.Column="1" Margin="0,0,0,5" 
+                                             IsReadOnly="True" BorderBrush="#FFE8EAF6" Background="#FFF5F5F5"/>
+                                    
+                                    <TextBlock Text="存储空间:" Grid.Row="4" Grid.Column="0" Margin="0,0,10,5"
+                                               Foreground="#FF444444"/>
+                                    <TextBox Text="{Binding StorageInfo}" Grid.Row="4" Grid.Column="1" Margin="0,0,0,5" 
+                                             IsReadOnly="True" BorderBrush="#FFE8EAF6" Background="#FFF5F5F5"/>
+                                </Grid>
+                                
+                                <TextBlock Text="高级信息" FontWeight="Bold" Margin="0,10,0,5"
+                                           Foreground="#FF3F51B5"/>
+                                <TextBox Text="{Binding AdvancedInfo}" IsReadOnly="True" 
+                                         AcceptsReturn="True" TextWrapping="Wrap" 
+                                         VerticalScrollBarVisibility="Auto" Height="150"
+                                         BorderBrush="#FFE8EAF6" Background="#FFF5F5F5"/>
+                            </StackPanel>
+                        </ScrollViewer>
+                    </Grid>
+                </Border>
+            </TabItem>
+            <TabItem Header="⚙️ Fastboot专区">
+                <Border Background="White" CornerRadius="4" Margin="10">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        
+                        <!-- Fastboot操作按钮区域 -->
+                        <StackPanel Orientation="Horizontal" Margin="10" Grid.Row="0">
+                            <Button Content="重启到Fastbootd" Width="120" Margin="0,0,10,0"
+                                    Style="{StaticResource {x:Type Button}}"/>
+                        </StackPanel>
+                        
+                        <!-- Fastboot命令区域 -->
+                        <ScrollViewer Grid.Row="1" Margin="10">
+                            <StackPanel>
+                                <TextBlock Text="Fastboot命令(按住音量下键开机，重启到fastbootd即可刷写boot,system等分区)" FontWeight="Bold" Margin="0,0,0,5"
+                                           Foreground="#FF3F51B5"/>
+                                <TextBox Text="{Binding FastbootCommand}" IsReadOnly="False" 
+                                         AcceptsReturn="True" TextWrapping="Wrap" 
+                                         VerticalScrollBarVisibility="Auto" Height="100"
+                                         BorderBrush="#FFE8EAF6" Background="White"/>
+                                
+                                <Button Content="执行命令" Width="120" Margin="0,10,0,0" HorizontalAlignment="Right"
+                                        Style="{StaticResource {x:Type Button}}"/>
+                                
+                                <TextBlock Text="命令输出" FontWeight="Bold" Margin="0,10,0,5"
+                                           Foreground="#FF3F51B5"/>
+                                <TextBox Text="{Binding FastbootOutput}" IsReadOnly="True" 
+                                         AcceptsReturn="True" TextWrapping="Wrap" 
+                                         VerticalScrollBarVisibility="Auto" Height="150"
+                                         BorderBrush="#FFE8EAF6" Background="#FFF5F5F5"/>
+                            </StackPanel>
+                        </ScrollViewer>
+                    </Grid>
+                </Border>
+            </TabItem>
+            <TabItem Header="🔧 一键root">
+                <Border Background="White" CornerRadius="4" Margin="10">
+                    
+                    <Grid/>
+                </Border>
+            </TabItem>
+            <TabItem Header="🔒 刷写第三方GSI">
+                <Border Background="White" CornerRadius="4" Margin="10">
+                    <Grid/>
+                </Border>
+            </TabItem>
+            <TabItem Header="⚡ 设置">
+                <Border Background="White" CornerRadius="4" Margin="10">
+                    <Grid/>
+                </Border>
+            </TabItem>
+        </TabControl>
+    </DockPanel>
+</Window>
