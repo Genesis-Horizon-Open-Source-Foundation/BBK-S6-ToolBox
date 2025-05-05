@@ -1,5 +1,8 @@
 # GH-EEBBK-S6-Flash-box
 EEBBK S6玩机工具箱
+---
+# 永久免费，严禁倒卖！！！
+---
 ## License
 
 This project is licensed under the **GNU General Public License v3.0**.  
