@@ -50,21 +50,21 @@
             </Setter>
         </Style>
         
-        <Style TargetType="Button">
-            <Setter Property="Background" Value="#FFE8EAF6"/>
+        <Style TargetType="Button">    <Setter Property="Background" Value="#FFE8EAF6"/>
             <Setter Property="Foreground" Value="#FF3F51B5"/>
             <Setter Property="BorderBrush" Value="#FFB3B3B3"/>
             <Setter Property="BorderThickness" Value="1"/>
             <Setter Property="Padding" Value="10 5"/>
-            <Setter Property="CornerRadius" Value="6"/>
+
+            <!-- 修改点：使用 ControlTemplate 实现圆角 -->
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}" 
-                                BorderBrush="{TemplateBinding BorderBrush}" 
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
                                 BorderThickness="{TemplateBinding BorderThickness}"
-                                CornerRadius="{TemplateBinding CornerRadius}">
-                            <ContentPresenter HorizontalAlignment="Center" 
+                                CornerRadius="6"> <!-- 使用 Border 的 CornerRadius -->
+                            <ContentPresenter HorizontalAlignment="Center"
                                               VerticalAlignment="Center"
                                               Margin="{TemplateBinding Padding}"/>
                         </Border>
@@ -78,10 +78,7 @@
                         </ControlTemplate.Triggers>
                     </ControlTemplate>
                 </Setter.Value>
-            </Setter>
-        </Style>
-    </Window.Resources>
-
+            </Setter></Style>
     <DockPanel>
         <!-- 菜单栏 -->
         <Menu DockPanel.Dock="Top">
@@ -98,13 +95,13 @@
                         <ScrollViewer VerticalScrollBarVisibility="Auto">
                             <StackPanel Margin="20">
                                 <!-- 欢迎信息 -->
-                                <TextBlock Text="欢迎使用BBKS6玩机工具箱" 
+                                <TextBlock Text="欢迎使用BBKS6玩机工具箱，如何" 
                                            FontSize="24" FontWeight="Bold" 
                                            Foreground="#FF3F51B5" 
                                            Margin="0,0,0,20"/>
                                 
                                 <!-- 作者信息 -->
-                                <TextBlock Text="作者信息" 
+                                <TextBlock Text="作者" 
                                            FontSize="16" FontWeight="Bold" 
                                            Foreground="#FF3F51B5" 
                                            Margin="0,0,0,10"/>

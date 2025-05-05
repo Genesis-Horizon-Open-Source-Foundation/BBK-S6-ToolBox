@@ -8,5 +8,12 @@ namespace BBKS6玩机工具箱
         {
             InitializeComponent();
         }
+
+        public void SetOutput(string text)
+        {
+            OutputTextBox.Text = text; // 假设 UI 中有名称为 OutputTextBox 的控件
+        }
+
     }
+    
 }

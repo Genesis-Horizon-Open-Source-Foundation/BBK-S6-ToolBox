@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="Batbbf" Height="450" Width="800">
     <Grid>
-        
+          <TextBox x:Name="OutputTextBox" IsReadOnly="True" />
+  
     </Grid>
 </Window>
