@@ -1,8 +1,8 @@
 # GH-EEBBK-S6-Flash-box
 
-![S6](S6.jpg "S6 设备展示")
-
 EEBBK S6 玩机工具箱 - 永久免费，严禁倒卖！
+
+![EEBBKBOX](EEBBK_resized.png "EEBBKBOX")
 
 ---
 ## 关于步步高家教机解除第三方软件安装限制免责声明
