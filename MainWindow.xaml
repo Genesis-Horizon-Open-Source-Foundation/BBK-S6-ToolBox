@@ -280,6 +280,15 @@
                                     Style="{StaticResource {x:Type Button}}"
                                     Click="Function2_Click"/>
                         </StackPanel>
+                        
+                        <!-- 新增提示文字 -->
+                        <TextBlock Text="注意：执行前请确保电脑已经安装刷机驱动，刷入TWRP可以解锁更多新玩法！（要有一定的刷机知识:)）"
+                                  Foreground="#FF666666"
+                                  FontSize="12"
+                                  Margin="10,5,10,0"
+                                  Grid.Row="1"
+                                  HorizontalAlignment="Left"
+                                  VerticalAlignment="Top"/>
                     </Grid>
                 </Border>
             </TabItem>
