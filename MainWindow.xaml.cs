@@ -41,8 +41,8 @@ namespace BBKS6玩机工具箱
             // 使用系统默认方式执行BAT文件
             var process = new Process();
             process.StartInfo.FileName = openFileDialog.FileName;
-            process.StartInfo.UseShellExecute = true;  // 启用系统外壳执行
-            process.StartInfo.Verb = "runas";          // 以常规方式运行
+            process.StartInfo.UseShellExecute = true;  
+            process.StartInfo.Verb = "runas";          
             process.Start();
         }
         catch (Exception ex)
@@ -131,7 +131,7 @@ namespace BBKS6玩机工具箱
                 {
                     process.Start();
                     string output = await process.StandardOutput.ReadToEndAsync();
-                    await Task.Run(() => process.WaitForExit()); // 替换为Task.Run包装
+                    await Task.Run(() => process.WaitForExit()); 
             
                     return output.Trim();
                 }
@@ -198,7 +198,7 @@ namespace BBKS6玩机工具箱
             MessageBox.Show("BBKS6玩机工具箱 v0.322\nAGPL - V3开源许可 © 2025", "关于");
         }
         
-        // 修改：执行bat文件方法，支持实时输出
+
 
         private void ExecuteBatFileDirectly(string batFileName)
         {
@@ -214,8 +214,8 @@ namespace BBKS6玩机工具箱
             {
                 var process = new Process();
                 process.StartInfo.FileName = batFilePath;
-                process.StartInfo.UseShellExecute = true;  // 启用系统外壳执行
-                process.StartInfo.Verb = "runas";          // 以常规方式运行
+                process.StartInfo.UseShellExecute = true;  
+                process.StartInfo.Verb = "runas";          
                 process.Start();
             }
             catch (Exception ex)

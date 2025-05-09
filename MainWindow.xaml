@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BBKS6玩机工具箱"
         mc:Ignorable="d"
-        Title="BBKS6玩机工具箱--永久免费，严禁倒卖，倒卖将违反开源许可证" Height="450" Width="800"
+        Title="BBKS6玩机工具箱--永久免费，严禁倒卖，倒卖将违反开源许可证" 
+        Height="800" Width="1200"
         WindowStartupLocation="CenterScreen"
         Background="#FFF5F5F5">
     

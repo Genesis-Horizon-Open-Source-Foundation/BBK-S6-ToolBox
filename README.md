@@ -1,5 +1,10 @@
 # GH-EEBBK-S6-Flash-box
 
+---
+
+### By huang1057 - GH工作室
+
+---
 EEBBK S6 玩机工具箱 - 永久免费，严禁倒卖！
 
 ![EEBBKBOX](EEBBK_resized.png "EEBBKBOX")
@@ -34,6 +39,8 @@ EEBBK S6 玩机工具箱 - 永久免费，严禁倒卖！
 ~~~
 🚧 其余的正在赛博施工ing，敬请期待...
 
+---
+注意：请使用1280x720分辨率以上的电脑操作！！！
 ---
 
 ## 📜 许可证声明
