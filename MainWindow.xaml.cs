@@ -1,9 +1,11 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
-using System.Windows;
 using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Threading;
 
 namespace BBKS6玩机工具箱
 {
@@ -17,6 +19,39 @@ namespace BBKS6玩机工具箱
         private string _advancedInfo;
 
         public event PropertyChangedEventHandler PropertyChanged;
+        
+        private void LogExecution(string filePath, string result)
+        {
+            string logPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "execution_log.txt");
+            string logEntry = $"[{DateTime.Now}] Executed: {filePath}\r\nResult: {result}\r\n\r\n";
+            File.AppendAllText(logPath, logEntry);
+        }
+
+        private void MenuItem_Open_Click(object sender, RoutedEventArgs e)
+{
+    var openFileDialog = new Microsoft.Win32.OpenFileDialog
+    {
+        Filter = "BAT files (*.bat)|*.bat|All files (*.*)|*.*"
+    };
+    
+    if (openFileDialog.ShowDialog() == true)
+    {
+        try
+        {
+            // 使用系统默认方式执行BAT文件
+            var process = new Process();
+            process.StartInfo.FileName = openFileDialog.FileName;
+            process.StartInfo.UseShellExecute = true;  // 启用系统外壳执行
+            process.StartInfo.Verb = "runas";          // 以常规方式运行
+            process.Start();
+        }
+        catch (Exception ex)
+        {
+            MessageBox.Show($"执行失败：{ex.Message}", "错误", MessageBoxButton.OK, MessageBoxImage.Error);
+        }
+    }
+}
+
 
         public string DeviceModel
         {
@@ -71,12 +106,12 @@ namespace BBKS6玩机工具箱
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        private string ExecuteAdbCommand(string arguments)
+        private async Task<string> ExecuteAdbCommandAsync(string arguments)
         {
             try
             {
                 string adbPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "tools", "adb.exe");
-                
+        
                 var process = new Process
                 {
                     StartInfo = new ProcessStartInfo
@@ -85,15 +120,21 @@ namespace BBKS6玩机工具箱
                         Arguments = arguments,
                         UseShellExecute = false,
                         RedirectStandardOutput = true,
-                        CreateNoWindow = true
+                        CreateNoWindow = true,
+                        StandardOutputEncoding = Encoding.UTF8
                     }
                 };
 
-                process.Start();
-                string output = process.StandardOutput.ReadToEnd();
-                process.WaitForExit();
-
-                return output.Trim();
+                var outputBuilder = new StringBuilder();
+        
+                using (process)
+                {
+                    process.Start();
+                    string output = await process.StandardOutput.ReadToEndAsync();
+                    await Task.Run(() => process.WaitForExit()); // 替换为Task.Run包装
+            
+                    return output.Trim();
+                }
             }
             catch (Exception ex)
             {
@@ -101,14 +142,15 @@ namespace BBKS6玩机工具箱
             }
         }
 
-        public void RefreshDeviceInfo()
+
+        public async void RefreshDeviceInfo()
         {
-            SerialNumber = ExecuteAdbCommand("get-serialno");
-            DeviceModel = ExecuteAdbCommand("shell getprop ro.product.model");
-            AndroidVersion = ExecuteAdbCommand("shell getprop ro.build.version.release");
-            CPUInfo = ExecuteAdbCommand("shell cat /proc/cpuinfo | grep model");
-            StorageInfo = ExecuteAdbCommand("shell df -h");
-            AdvancedInfo = ExecuteAdbCommand("shell getprop");
+            SerialNumber = await ExecuteAdbCommandAsync("get-serialno");
+            DeviceModel = await ExecuteAdbCommandAsync("shell getprop ro.product.model");
+            AndroidVersion = await ExecuteAdbCommandAsync("shell getprop ro.build.version.release");
+            CPUInfo = await ExecuteAdbCommandAsync("shell cat /proc/cpuinfo | grep model");
+            StorageInfo = await ExecuteAdbCommandAsync("shell df -h");
+            AdvancedInfo = await ExecuteAdbCommandAsync("shell getprop");
         }
 
         private void RefreshDeviceInfo_Click(object sender, RoutedEventArgs e)
@@ -139,10 +181,7 @@ namespace BBKS6玩机工具箱
             }
         }
 
-        private void MenuItem_Open_Click(object sender, RoutedEventArgs e)
-        {
-            // TODO:打开文件功能
-        }
+       
 
         private void MenuItem_Save_Click(object sender, RoutedEventArgs e)
         {
@@ -157,55 +196,42 @@ namespace BBKS6玩机工具箱
         private void MenuItem_About_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("BBKS6玩机工具箱 v0.322\nAGPL - V3开源许可 © 2025", "关于");
-            
         }
-        private async void ExecuteBatFile(string batFileName)
+        
+        // 修改：执行bat文件方法，支持实时输出
+
+        private void ExecuteBatFileDirectly(string batFileName)
         {
-            var batbbfWindow = new Batbbf();
+            string batFilePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "tools", batFileName);
+    
+            if (!File.Exists(batFilePath))
+            {
+                MessageBox.Show($"文件不存在：{batFilePath}", "错误", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
     
             try
             {
                 var process = new Process();
-                process.StartInfo.FileName = "cmd.exe";
-                process.StartInfo.Arguments = $"/c \"{batFileName}\"";
-                process.StartInfo.WorkingDirectory = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "tools");
-                process.StartInfo.UseShellExecute = false;
-                process.StartInfo.RedirectStandardOutput = true;
-                process.StartInfo.RedirectStandardError = true;
-                process.StartInfo.CreateNoWindow = true;
-
-                var outputBuilder = new StringBuilder();
-        
-                process.OutputDataReceived += (sender, e) 
-                    => outputBuilder.AppendLine(e.Data ?? string.Empty);
-                process.ErrorDataReceived += (sender, e) 
-                    => outputBuilder.AppendLine(e.Data ?? string.Empty);
-
+                process.StartInfo.FileName = batFilePath;
+                process.StartInfo.UseShellExecute = true;  // 启用系统外壳执行
+                process.StartInfo.Verb = "runas";          // 以常规方式运行
                 process.Start();
-                process.BeginOutputReadLine();
-                process.BeginErrorReadLine();
-        
-                process.WaitForExit();
-        
-                batbbfWindow.SetOutput(outputBuilder.ToString());
             }
             catch (Exception ex)
             {
-                batbbfWindow.SetOutput($"执行错误：{ex.Message}");
+                MessageBox.Show($"执行失败：{ex.Message}", "错误", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-    
-            batbbfWindow.Show();
         }
 
         private void Function1_Click(object sender, RoutedEventArgs e)
         {
-            ExecuteBatFile("function1.bat");
+            ExecuteBatFileDirectly("s6root.bat");
         }
 
         private void Function2_Click(object sender, RoutedEventArgs e)
         {
-            ExecuteBatFile("function2.bat");
+            ExecuteBatFileDirectly("fhtwrp.bat");
         }
-
     }
 }

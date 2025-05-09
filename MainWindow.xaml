@@ -9,76 +9,85 @@
         WindowStartupLocation="CenterScreen"
         Background="#FFF5F5F5">
     
-    <Window.Resources>
-        <Style TargetType="Menu">
-            <Setter Property="Background" Value="#FF3F51B5"/>
-            <Setter Property="Foreground" Value="White"/>
-            <Setter Property="FontSize" Value="14"/>
-            <Setter Property="Height" Value="40"/>
-        </Style>
-        
-        <Style TargetType="TabControl">
-            <Setter Property="Background" Value="White"/>
-            <Setter Property="BorderThickness" Value="0"/>
-            <Setter Property="Margin" Value="10"/>
-            <Setter Property="Padding" Value="0"/>
-        </Style>
-        
-        <Style TargetType="TabItem">
-            <Setter Property="FontSize" Value="14"/>
-            <Setter Property="Padding" Value="15 5"/>
-            <Setter Property="Background" Value="Transparent"/>
-            <Setter Property="BorderThickness" Value="0"/>
-            <Setter Property="Foreground" Value="#FF444444"/>
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="TabItem">
-                        <Border Name="Border" CornerRadius="4 4 0 0">
-                            <ContentPresenter ContentSource="Header" 
-                                              Margin="{TemplateBinding Padding}"
-                                              HorizontalAlignment="Center"
-                                              VerticalAlignment="Center"/>
-                        </Border>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsSelected" Value="True">
-                                <Setter TargetName="Border" Property="Background" Value="#FFE8EAF6"/>
-                                <Setter Property="Foreground" Value="#FF3F51B5"/>
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter>
-        </Style>
-        
-        <Style TargetType="Button">    <Setter Property="Background" Value="#FFE8EAF6"/>
-            <Setter Property="Foreground" Value="#FF3F51B5"/>
-            <Setter Property="BorderBrush" Value="#FFB3B3B3"/>
-            <Setter Property="BorderThickness" Value="1"/>
-            <Setter Property="Padding" Value="10 5"/>
+<Window.Resources>
+    <!-- 菜单样式 -->
+    <Style TargetType="Menu">
+        <Setter Property="Background" Value="#FF3F51B5"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Height" Value="40"/>
+    </Style>
+    
+    <!-- 标签页样式 -->
+    <Style TargetType="TabControl">
+        <Setter Property="Background" Value="White"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Margin" Value="10"/>
+        <Setter Property="Padding" Value="0"/>
+    </Style>
+    
+    <!-- 标签项样式 -->
+    <Style TargetType="TabItem">
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="Padding" Value="15 5"/>
+        <Setter Property="Background" Value="Transparent"/>
+        <Setter Property="BorderThickness" Value="0"/>
+        <Setter Property="Foreground" Value="#FF444444"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="TabItem">
+                    <Border Name="Border" CornerRadius="4 4 0 0">
+                        <ContentPresenter ContentSource="Header" 
+                                          Margin="{TemplateBinding Padding}"
+                                          HorizontalAlignment="Center"
+                                          VerticalAlignment="Center"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter TargetName="Border" Property="Background" Value="#FFE8EAF6"/>
+                            <Setter Property="Foreground" Value="#FF3F51B5"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
 
-            <!-- 修改点：使用 ControlTemplate 实现圆角 -->
-            <Setter Property="Template">
-                <Setter.Value>
-                    <ControlTemplate TargetType="Button">
-                        <Border Background="{TemplateBinding Background}"
-                                BorderBrush="{TemplateBinding BorderBrush}"
-                                BorderThickness="{TemplateBinding BorderThickness}"
-                                CornerRadius="6"> <!-- 使用 Border 的 CornerRadius -->
-                            <ContentPresenter HorizontalAlignment="Center"
-                                              VerticalAlignment="Center"
-                                              Margin="{TemplateBinding Padding}"/>
-                        </Border>
-                        <ControlTemplate.Triggers>
-                            <Trigger Property="IsMouseOver" Value="True">
-                                <Setter Property="Background" Value="#FFD1C4E9"/>
-                            </Trigger>
-                            <Trigger Property="IsPressed" Value="True">
-                                <Setter Property="Background" Value="#FFC5CAE9"/>
-                            </Trigger>
-                        </ControlTemplate.Triggers>
-                    </ControlTemplate>
-                </Setter.Value>
-            </Setter></Style>
+    <!-- 按钮样式 -->
+    <Style TargetType="Button">
+        <Setter Property="Background" Value="#FFE8EAF6"/>
+        <Setter Property="Foreground" Value="#FF3F51B5"/>
+        <Setter Property="BorderBrush" Value="#FFB3B3B3"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="Padding" Value="10 5"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            CornerRadius="6">
+                        <ContentPresenter Content="{TemplateBinding Content}"
+                                          HorizontalAlignment="Center"
+                                          VerticalAlignment="Center"
+                                          Margin="{TemplateBinding Padding}"/>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="#FFD1C4E9"/>
+                        </Trigger>
+                        <Trigger Property="IsPressed" Value="True">
+                            <Setter Property="Background" Value="#FFC5CAE9"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</Window.Resources>
+
+    
+
     <DockPanel>
         <!-- 菜单栏 -->
         <Menu DockPanel.Dock="Top">
@@ -95,7 +104,7 @@
                         <ScrollViewer VerticalScrollBarVisibility="Auto">
                             <StackPanel Margin="20">
                                 <!-- 欢迎信息 -->
-                                <TextBlock Text="欢迎使用BBKS6玩机工具箱，如何" 
+                                <TextBlock Text="欢迎使用BBKS6玩机工具箱" 
                                            FontSize="24" FontWeight="Bold" 
                                            Foreground="#FF3F51B5" 
                                            Margin="0,0,0,20"/>
