@@ -1,7 +1,7 @@
 # GH-EEBBK-S6-Flash-box
 
 ---
-
+# 正在使用python重构，暂时无法使用
 ### By huang1057 - GH工作室
 
 ---
