@@ -1,0 +1,1 @@
+adb install C:\Users\Administrator\Desktop\bbf\bff\s6superroot\magisk.apk

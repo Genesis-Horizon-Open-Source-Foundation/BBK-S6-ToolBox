@@ -8,7 +8,7 @@
   </a>
 </div>
 
-By huang1057 - GH工作室
+By huang1057
 
 EEBBK S6 玩机工具箱 - 永久免费，严禁倒卖！
 ---
@@ -42,7 +42,7 @@ EEBBK S6 玩机工具箱 - 永久免费，严禁倒卖！
 ---
 #### 版权声明
 ~~~
-Copyright (C) 2025  huang1057 & Starry Sky Team
+Copyright (C) 2025  huang1057
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
