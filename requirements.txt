@@ -1,0 +1,4 @@
+PyQt5==5.15.9
+PyQt-Fluent-Widgets==1.5.3
+markdown2
+pywin32

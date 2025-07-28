@@ -1,18 +1,29 @@
 # BBK S6 Toolbox
 <div align="center">
   <img src="icon.png" width="200" alt="BBKS6玩机工具箱">
-  <h1>BBK S6 Toolbox</h1>
-  <p>步步高S6玩机工具箱</p>
+  <h1>BBK S6 Toolbox V2.0</h1>
+  <p>步步高S6玩机工具箱 V2.0</p>
   <a href="https://www.gnu.org/licenses/gpl-3.0">
     <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="GPL v3">
   </a>
 </div>
 
 By huang1057
-
+当前版本：V2.0.1
 EEBBK S6 玩机工具箱 - 永久免费，严禁倒卖！
 ---
+## 使用说明
+1. 在Release或者[官网](https://www.eebbk.tbit.top)下载最新版本的工具箱7z压缩文件/Setup.exe
+2. 解压缩文件/安装程序
+3. 运行（压缩文件请运行run.bat，安装程序直接打开即可）
+4. 按照提示操作
 
+### 功能列表
+| 功能名称 | 是否实现 |
+ --- | --- 
+ 一键Root | 是 
+ 刷入TWRP | 是
+ 刷入GSI | 无，但很快实现
 ## 关于步步高家教机解除第三方软件安装限制免责声明
 *协议更新日期：2022年2月6日*
 1. 所有已经解除第三方软件安装限制的家教机都可以恢复到解除限制前之状态。
