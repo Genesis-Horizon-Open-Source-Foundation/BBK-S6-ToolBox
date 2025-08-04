@@ -1,0 +1,2275 @@
+2025.05.05_14.35.18.040 [I] framework.bat-startpre 系统信息:AMD64.10.0.26100.3775.工作目录:C:\Users\Administrator\Desktop\bbf\bff\bin  
+2025.05.05_14.35.22.142 [I] framework.bat-startpre 启动准备工作完成  
+2025.05.05_14.35.22.399 [I] chkdev.bat-qcedl 正在检查设备连接:qcedl  
+2025.05.05_14.35.31.935 [I] chkdev.bat-qcedl 设备已连接:qcedl.端口号:8  
+2025.05.05_14.35.34.273 [I] chkdev.bat-qcedl 正在检查设备连接:qcedl  
+2025.05.05_14.35.34.626 [I] chkdev.bat-qcedl 设备已连接:qcedl.端口号:8  
+2025.05.05_14.35.34.735 [I] write.bat-qcedlsendfh 接收变量:port:auto.filepath:C:\Users\Administrator\Desktop\bbf\bff\s6superroot\firehose.elf.configuremode:auto  
+2025.05.05_14.35.34.837 [I] chkdev.bat-qcedl 正在检查设备连接:qcedl  
+2025.05.05_14.35.35.100 [I] chkdev.bat-qcedl 设备已连接:qcedl.端口号:8  
+2025.05.05_14.35.35.197 [I] write.bat-qcedlsendfh 正在发送引导  
+Binary build date: Jun 25 2019 @ 03:16:15
+QSAHARASERVER CALLED LIKE THIS: 'QSaharaServer.ex'Current working dir: C:\Users\Administrator\Desktop\bbf\bff\bin
+Sahara mappings:
+2: amss.mbn
+6: apps.mbn
+8: dsp1.mbn
+10: dbl.mbn
+11: osbl.mbn
+12: dsp2.mbn
+16: efs1.mbn
+17: efs2.mbn
+20: efs3.mbn
+21: sbl1.mbn
+22: sbl2.mbn
+23: rpm.mbn
+25: tz.mbn
+28: dsp3.mbn
+29: acdb.mbn
+30: wdt.mbn
+31: mba.mbn
+13: C:\Users\Administrator\Desktop\bbf\bff\s6superroot\firehose.elf
+
+14:35:35: Requested ID 13, file: "C:\Users\Administrator\Desktop\bbf\bff\s6superroot\firehose.elf"
+
+14:35:35: 676092 bytes transferred in 0.109000 seconds (5.9153MBps)
+
+
+
+14:35:35: File transferred successfully
+
+
+
+14:35:35: Sahara protocol completed
+2025.05.05_14.35.35.422 [I] write.bat-qcedlsendfh 发送引导完成  
+2025.05.05_14.35.35.472 [I] write.bat-qcedlsendfh 尝试ufs模式配置端口  
+
+Base Version: 21.06.23.10.31-UotanSpec
+Binary build date: Mar 27 2025 @ 00:38:47
+Incremental Build version: 25.03.27.00.38.47
+
+14:35:35: INFO: Output Dir Already exists C:\Users\Administrator\Desktop\bbf\bff\bin\tmp
+14:35:35: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt') with AccessMode='w'
+14:35:35: INFO: FH_LOADER WAS CALLED EXACTLY LIKE THIS
+************************************************
+fh_loader.exe --port=\\.\COM8 --memoryname=ufs --sendxml=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml --convertprogram2read --mainoutputdir=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp --noprompt 
+************************************************
+
+14:35:35: INFO: Current working dir (cwd): C:\Users\Administrator\Desktop\bbf\bff\bin\
+14:35:35: INFO: Showing network mappings to allow debugging
+14:35:35: INFO: 
+
+
+
+14:35:35: INFO: Trying to store 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml' in string table
+14:35:35: INFO: Looking for file 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:35: INFO: User wants to talk to port '\\.\COM8'
+14:35:35: INFO: Took       0.00000000 seconds to open port
+14:35:35: INFO: Sorting TAGS to ensure order is <configure>,<erase>, others, <patch>,<power>
+14:35:35: INFO: Sending <configure>
+
+14:35:35: INFO: TARGET SAID: 'INFO: Binary build date: Jul  4 2021 @ 11:50:21'
+
+14:35:35: INFO: TARGET SAID: 'INFO: Binary build date: Jul  4 2021 @ 11:50:21
+'
+
+14:35:35: INFO: TARGET SAID: 'INFO: Chip serial num: 3729502076 (0xde4baf7c)'
+
+14:35:35: INFO: TARGET SAID: 'INFO: Supported Functions (16):'
+
+14:35:35: INFO: TARGET SAID: 'INFO: program'
+
+14:35:35: INFO: TARGET SAID: 'INFO: read'
+
+14:35:35: INFO: TARGET SAID: 'INFO: nop'
+
+14:35:35: INFO: TARGET SAID: 'INFO: patch'
+
+14:35:35: INFO: TARGET SAID: 'INFO: configure'
+
+14:35:35: INFO: TARGET SAID: 'INFO: setbootablestoragedrive'
+
+14:35:35: INFO: TARGET SAID: 'INFO: erase'
+
+14:35:35: INFO: TARGET SAID: 'INFO: power'
+
+14:35:35: INFO: TARGET SAID: 'INFO: firmwarewrite'
+
+14:35:35: INFO: TARGET SAID: 'INFO: getstorageinfo'
+
+14:35:35: INFO: TARGET SAID: 'INFO: benchmark'
+
+14:35:35: INFO: TARGET SAID: 'INFO: peek'
+
+14:35:35: INFO: TARGET SAID: 'INFO: poke'
+
+14:35:35: INFO: TARGET SAID: 'INFO: emmc'
+
+14:35:35: INFO: TARGET SAID: 'INFO: ufs'
+
+14:35:35: INFO: TARGET SAID: 'INFO: fixgpt'
+
+14:35:35: INFO: TARGET SAID: 'INFO: End of supported functions 16'
+
+14:35:35: INFO: TARGET SAID: 'INFO: Calling handler for configure'
+
+14:35:35: INFO: TARGET SAID: 'INFO: Storage type set to value UFS'
+14:35:35: INFO: fh.attrs.MaxPayloadSizeToTargetInBytes = 1048576
+14:35:35: INFO: fh.attrs.MaxPayloadSizeToTargetInBytesSupported = 1048576
+14:35:35: INFO: In handleRead('tmp.bin')
+14:35:35: INFO: Looking for file 'tmp.bin'
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:35: WARNING: Couldn't find the file 'tmp.bin', returning NULL
+14:35:35: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/tmp.bin') with AccessMode='wb'
+14:35:35: INFO: =======================================================
+14:35:35: INFO: <read> (24.0KB) 6 sectors from location 0 FILE: 'tmp.bin'
+14:35:35: INFO: =======================================================
+
+14:35:35: INFO: TARGET SAID: 'INFO: Calling handler for read'
+
+14:35:35: INFO: Time measurement too small --- Overall to target 0.0 seconds (0Bps)
+14:35:35: INFO: =======================================================
+14:35:35: INFO: ===================== SUCCESS =========================
+14:35:35: INFO: =======================================================
+
+
+14:35:35: INFO: ==============================================================
+14:35:35: INFO: Files used and their paths
+14:35:35: INFO:   1 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt'
+14:35:35: INFO:   2 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:35: INFO:   3 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/tmp.bin'
+
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:35: INFO: ==============================================================
+14:35:35: INFO: NOTE: There were WARNINGS!! Repeated here, but please see log for more detail
+Couldn't find the file 'tmp.bin', returning NULL
+NOTE: There were WARNINGS!! Repeated above, but please see log for more detail
+
+
+
+14:35:35: INFO: ==============================================================
+14:35:35: INFO:      _             (done)
+14:35:35: INFO:     | |                 
+14:35:35: INFO:   __| | ___  _ __   ___ 
+14:35:35: INFO:  / _` |/ _ \| '_ \ / _ \
+14:35:35: INFO: | (_| | (_) | | | |  __/
+14:35:35: INFO:  \__,_|\___/|_| |_|\___|
+14:35:35: INFO: {All Finished Successfully}
+
+14:35:35: INFO: Overall to target  0.140 seconds (171.43 KBps)
+
+Writing log, might take a minute
+
+
+Log at 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\port_trace.txt'
+
+2025.05.05_14.35.35.890 [I] write.bat-qcedlsendfh ufs模式配置端口成功  
+2025.05.05_14.35.35.967 [I] write.bat-qcedl 接收变量:parname:recovery.filepath:C:\Users\Administrator\Desktop\bbf\bff\s6superroot\recovery.img.port:auto.fh:  
+magic: 1380208193 fileHdrSz: 21756 chunkHdrSz: 227
+[Error]not_simg
+2025.05.05_14.35.36.424 [I] chkdev.bat-qcedl 正在检查设备连接:qcedl  
+2025.05.05_14.35.36.642 [I] chkdev.bat-qcedl 设备已连接:qcedl.端口号:8  
+2025.05.05_14.35.36.726 [I] info.bat-qcedl 接收变量:port:8.fh:  
+2025.05.05_14.35.36.778 [I] info.bat-qcedl 开始9008读取设备信息  
+
+Base Version: 21.06.23.10.31-UotanSpec
+Binary build date: Mar 27 2025 @ 00:38:47
+Incremental Build version: 25.03.27.00.38.47
+
+14:35:36: INFO: Output Dir Already exists C:\Users\Administrator\Desktop\bbf\bff\bin\tmp
+14:35:36: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt') with AccessMode='w'
+14:35:36: INFO: FH_LOADER WAS CALLED EXACTLY LIKE THIS
+************************************************
+fh_loader.exe --port=\\.\COM8 --memoryname=ufs --sendxml=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml --convertprogram2read --mainoutputdir=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp --skip_config --noprompt 
+************************************************
+
+14:35:36: INFO: Current working dir (cwd): C:\Users\Administrator\Desktop\bbf\bff\bin\
+14:35:36: INFO: Showing network mappings to allow debugging
+14:35:36: INFO: User wants to skip device auto configure
+14:35:36: INFO: 
+
+
+
+14:35:36: INFO: Trying to store 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml' in string table
+14:35:36: INFO: Looking for file 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:36: INFO: User wants to talk to port '\\.\COM8'
+14:35:36: INFO: Took       0.00000000 seconds to open port
+14:35:36: INFO: Sorting TAGS to ensure order is <configure>,<erase>, others, <patch>,<power>
+14:35:36: INFO: Skipping <configure>
+14:35:36: INFO: In handleRead('tmp.bin')
+14:35:36: INFO: Looking for file 'tmp.bin'
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:36: WARNING: Couldn't find the file 'tmp.bin', returning NULL
+14:35:36: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/tmp.bin') with AccessMode='wb'
+14:35:36: INFO: =======================================================
+14:35:36: INFO: <read> (24.0KB) 6 sectors from location 0 FILE: 'tmp.bin'
+14:35:36: INFO: =======================================================
+
+14:35:36: INFO: TARGET SAID: 'INFO: Calling handler for read'
+
+14:35:36: INFO: Time measurement too small --- Overall to target 0.0 seconds (0Bps)
+14:35:36: INFO: =======================================================
+14:35:36: INFO: ===================== SUCCESS =========================
+14:35:36: INFO: =======================================================
+
+
+14:35:36: INFO: ==============================================================
+14:35:36: INFO: Files used and their paths
+14:35:36: INFO:   1 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt'
+14:35:36: INFO:   2 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:36: INFO:   3 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/tmp.bin'
+
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:36: INFO: ==============================================================
+14:35:36: INFO: NOTE: There were WARNINGS!! Repeated here, but please see log for more detail
+Couldn't find the file 'tmp.bin', returning NULL
+NOTE: There were WARNINGS!! Repeated above, but please see log for more detail
+
+
+
+14:35:36: INFO: ==============================================================
+14:35:36: INFO:      _             (done)
+14:35:36: INFO:     | |                 
+14:35:36: INFO:   __| | ___  _ __   ___ 
+14:35:36: INFO:  / _` |/ _ \| '_ \ / _ \
+14:35:36: INFO: | (_| | (_) | | | |  __/
+14:35:36: INFO:  \__,_|\___/|_| |_|\___|
+14:35:36: INFO: {All Finished Successfully}
+
+14:35:36: INFO: Overall to target  0.047 seconds (510.64 KBps)
+
+Writing log, might take a minute
+
+
+Log at 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\port_trace.txt'
+
+2025.05.05_14.35.36.999 [I] info.bat-qcedl 测试ufs可用lun总数  
+
+Base Version: 21.06.23.10.31-UotanSpec
+Binary build date: Mar 27 2025 @ 00:38:47
+Incremental Build version: 25.03.27.00.38.47
+
+14:35:37: INFO: Output Dir Already exists C:\Users\Administrator\Desktop\bbf\bff\bin\tmp
+14:35:37: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt') with AccessMode='w'
+14:35:37: INFO: FH_LOADER WAS CALLED EXACTLY LIKE THIS
+************************************************
+fh_loader.exe --port=\\.\COM8 --memoryname=ufs --sendxml=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml --convertprogram2read --mainoutputdir=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp --skip_config --noprompt 
+************************************************
+
+14:35:37: INFO: Current working dir (cwd): C:\Users\Administrator\Desktop\bbf\bff\bin\
+14:35:37: INFO: Showing network mappings to allow debugging
+14:35:37: INFO: User wants to skip device auto configure
+14:35:37: INFO: 
+
+
+
+14:35:37: INFO: Trying to store 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml' in string table
+14:35:37: INFO: Looking for file 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:37: INFO: User wants to talk to port '\\.\COM8'
+14:35:37: INFO: Took       0.01500000 seconds to open port
+14:35:37: INFO: Sorting TAGS to ensure order is <configure>,<erase>, others, <patch>,<power>
+14:35:37: INFO: Skipping <configure>
+14:35:37: INFO: In handleRead('gpt_main0.bin')
+14:35:37: INFO: Looking for file 'gpt_main0.bin'
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:37: WARNING: Couldn't find the file 'gpt_main0.bin', returning NULL
+14:35:37: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/gpt_main0.bin') with AccessMode='wb'
+14:35:37: INFO: =======================================================
+14:35:37: INFO: <read> (24.0KB) 6 sectors from location 0 FILE: 'gpt_main0.bin'
+14:35:37: INFO: =======================================================
+
+14:35:37: INFO: TARGET SAID: 'INFO: Calling handler for read'
+
+14:35:37: INFO: Time measurement too small --- Overall to target 0.0 seconds (0Bps)
+14:35:37: INFO: =======================================================
+14:35:37: INFO: ===================== SUCCESS =========================
+14:35:37: INFO: =======================================================
+
+
+14:35:37: INFO: ==============================================================
+14:35:37: INFO: Files used and their paths
+14:35:37: INFO:   1 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt'
+14:35:37: INFO:   2 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:37: INFO:   3 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/gpt_main0.bin'
+
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:37: INFO: ==============================================================
+14:35:37: INFO: NOTE: There were WARNINGS!! Repeated here, but please see log for more detail
+Couldn't find the file 'gpt_main0.bin', returning NULL
+NOTE: There were WARNINGS!! Repeated above, but please see log for more detail
+
+
+
+14:35:37: INFO: ==============================================================
+14:35:37: INFO:      _             (done)
+14:35:37: INFO:     | |                 
+14:35:37: INFO:   __| | ___  _ __   ___ 
+14:35:37: INFO:  / _` |/ _ \| '_ \ / _ \
+14:35:37: INFO: | (_| | (_) | | | |  __/
+14:35:37: INFO:  \__,_|\___/|_| |_|\___|
+14:35:37: INFO: {All Finished Successfully}
+
+14:35:37: INFO: Overall to target  0.031 seconds (774.19 KBps)
+
+Writing log, might take a minute
+
+
+Log at 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\port_trace.txt'
+
+[1] ssd 6 7 2
+[2] persist 8 8199 8192
+[3] misc 8200 8455 256
+[4] keystore 8456 8583 128
+[5] frp 8584 8711 128
+[6] super 8712 1581575 1572864
+[7] cache 1581576 1647111 65536
+[8] recovery 1647112 1671687 24576
+[9] vbmeta_system 1671688 1671703 16
+[10] vbmeta_systembak 1671704 1671719 16
+[11] metadata 1671720 1675815 4096
+[12] userdata 1675816 30119930 28444115
+[Total] 12
+Analysis completed.
+
+Base Version: 21.06.23.10.31-UotanSpec
+Binary build date: Mar 27 2025 @ 00:38:47
+Incremental Build version: 25.03.27.00.38.47
+
+14:35:37: INFO: Output Dir Already exists C:\Users\Administrator\Desktop\bbf\bff\bin\tmp
+14:35:37: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt') with AccessMode='w'
+14:35:37: INFO: FH_LOADER WAS CALLED EXACTLY LIKE THIS
+************************************************
+fh_loader.exe --port=\\.\COM8 --memoryname=ufs --sendxml=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml --convertprogram2read --mainoutputdir=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp --skip_config --noprompt 
+************************************************
+
+14:35:37: INFO: Current working dir (cwd): C:\Users\Administrator\Desktop\bbf\bff\bin\
+14:35:37: INFO: Showing network mappings to allow debugging
+14:35:37: INFO: User wants to skip device auto configure
+14:35:37: INFO: 
+
+
+
+14:35:37: INFO: Trying to store 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml' in string table
+14:35:37: INFO: Looking for file 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:37: INFO: User wants to talk to port '\\.\COM8'
+14:35:37: INFO: Took       0.00000000 seconds to open port
+14:35:37: INFO: Sorting TAGS to ensure order is <configure>,<erase>, others, <patch>,<power>
+14:35:37: INFO: Skipping <configure>
+14:35:37: INFO: In handleRead('gpt_main1.bin')
+14:35:37: INFO: Looking for file 'gpt_main1.bin'
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:37: WARNING: Couldn't find the file 'gpt_main1.bin', returning NULL
+14:35:37: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/gpt_main1.bin') with AccessMode='wb'
+14:35:37: INFO: =======================================================
+14:35:37: INFO: <read> (24.0KB) 6 sectors from location 0 FILE: 'gpt_main1.bin'
+14:35:37: INFO: =======================================================
+
+14:35:37: INFO: TARGET SAID: 'INFO: Calling handler for read'
+
+14:35:37: INFO: Time measurement too small --- Overall to target 0.0 seconds (0Bps)
+14:35:37: INFO: =======================================================
+14:35:37: INFO: ===================== SUCCESS =========================
+14:35:37: INFO: =======================================================
+
+
+14:35:37: INFO: ==============================================================
+14:35:37: INFO: Files used and their paths
+14:35:37: INFO:   1 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt'
+14:35:37: INFO:   2 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:37: INFO:   3 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/gpt_main1.bin'
+
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:37: INFO: ==============================================================
+14:35:37: INFO: NOTE: There were WARNINGS!! Repeated here, but please see log for more detail
+Couldn't find the file 'gpt_main1.bin', returning NULL
+NOTE: There were WARNINGS!! Repeated above, but please see log for more detail
+
+
+
+14:35:37: INFO: ==============================================================
+14:35:37: INFO:      _             (done)
+14:35:37: INFO:     | |                 
+14:35:37: INFO:   __| | ___  _ __   ___ 
+14:35:37: INFO:  / _` |/ _ \| '_ \ / _ \
+14:35:37: INFO: | (_| | (_) | | | |  __/
+14:35:37: INFO:  \__,_|\___/|_| |_|\___|
+14:35:37: INFO: {All Finished Successfully}
+
+14:35:37: INFO: Overall to target  0.031 seconds (774.19 KBps)
+
+Writing log, might take a minute
+
+
+Log at 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\port_trace.txt'
+
+[1] xbl 6 901 896
+[2] xbl_config 902 933 32
+[3] last_parti 934 2042 1109
+[Total] 3
+Analysis completed.
+
+Base Version: 21.06.23.10.31-UotanSpec
+Binary build date: Mar 27 2025 @ 00:38:47
+Incremental Build version: 25.03.27.00.38.47
+
+14:35:37: INFO: Output Dir Already exists C:\Users\Administrator\Desktop\bbf\bff\bin\tmp
+14:35:38: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt') with AccessMode='w'
+14:35:38: INFO: FH_LOADER WAS CALLED EXACTLY LIKE THIS
+************************************************
+fh_loader.exe --port=\\.\COM8 --memoryname=ufs --sendxml=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml --convertprogram2read --mainoutputdir=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp --skip_config --noprompt 
+************************************************
+
+14:35:38: INFO: Current working dir (cwd): C:\Users\Administrator\Desktop\bbf\bff\bin\
+14:35:38: INFO: Showing network mappings to allow debugging
+14:35:38: INFO: User wants to skip device auto configure
+14:35:38: INFO: 
+
+
+
+14:35:38: INFO: Trying to store 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml' in string table
+14:35:38: INFO: Looking for file 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:38: INFO: User wants to talk to port '\\.\COM8'
+14:35:38: INFO: Took       0.00000000 seconds to open port
+14:35:38: INFO: Sorting TAGS to ensure order is <configure>,<erase>, others, <patch>,<power>
+14:35:38: INFO: Skipping <configure>
+14:35:38: INFO: In handleRead('gpt_main2.bin')
+14:35:38: INFO: Looking for file 'gpt_main2.bin'
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:38: WARNING: Couldn't find the file 'gpt_main2.bin', returning NULL
+14:35:38: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/gpt_main2.bin') with AccessMode='wb'
+14:35:38: INFO: =======================================================
+14:35:38: INFO: <read> (24.0KB) 6 sectors from location 0 FILE: 'gpt_main2.bin'
+14:35:38: INFO: =======================================================
+
+14:35:38: INFO: TARGET SAID: 'INFO: Calling handler for read'
+
+14:35:38: INFO: Time measurement too small --- Overall to target 0.0 seconds (0Bps)
+14:35:38: INFO: =======================================================
+14:35:38: INFO: ===================== SUCCESS =========================
+14:35:38: INFO: =======================================================
+
+
+14:35:38: INFO: ==============================================================
+14:35:38: INFO: Files used and their paths
+14:35:38: INFO:   1 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt'
+14:35:38: INFO:   2 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:38: INFO:   3 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/gpt_main2.bin'
+
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:38: INFO: ==============================================================
+14:35:38: INFO: NOTE: There were WARNINGS!! Repeated here, but please see log for more detail
+Couldn't find the file 'gpt_main2.bin', returning NULL
+NOTE: There were WARNINGS!! Repeated above, but please see log for more detail
+
+
+
+14:35:38: INFO: ==============================================================
+14:35:38: INFO:      _             (done)
+14:35:38: INFO:     | |                 
+14:35:38: INFO:   __| | ___  _ __   ___ 
+14:35:38: INFO:  / _` |/ _ \| '_ \ / _ \
+14:35:38: INFO: | (_| | (_) | | | |  __/
+14:35:38: INFO:  \__,_|\___/|_| |_|\___|
+14:35:38: INFO: {All Finished Successfully}
+
+14:35:38: INFO: Overall to target  0.047 seconds (510.64 KBps)
+
+Writing log, might take a minute
+
+
+Log at 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\port_trace.txt'
+
+[1] xblbak 6 901 896
+[2] xbl_configbak 902 933 32
+[3] last_parti 934 2042 1109
+[Total] 3
+Analysis completed.
+
+Base Version: 21.06.23.10.31-UotanSpec
+Binary build date: Mar 27 2025 @ 00:38:47
+Incremental Build version: 25.03.27.00.38.47
+
+14:35:38: INFO: Output Dir Already exists C:\Users\Administrator\Desktop\bbf\bff\bin\tmp
+14:35:38: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt') with AccessMode='w'
+14:35:38: INFO: FH_LOADER WAS CALLED EXACTLY LIKE THIS
+************************************************
+fh_loader.exe --port=\\.\COM8 --memoryname=ufs --sendxml=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml --convertprogram2read --mainoutputdir=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp --skip_config --noprompt 
+************************************************
+
+14:35:38: INFO: Current working dir (cwd): C:\Users\Administrator\Desktop\bbf\bff\bin\
+14:35:38: INFO: Showing network mappings to allow debugging
+14:35:38: INFO: User wants to skip device auto configure
+14:35:38: INFO: 
+
+
+
+14:35:38: INFO: Trying to store 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml' in string table
+14:35:38: INFO: Looking for file 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:38: INFO: User wants to talk to port '\\.\COM8'
+14:35:38: INFO: Took       0.00000000 seconds to open port
+14:35:38: INFO: Sorting TAGS to ensure order is <configure>,<erase>, others, <patch>,<power>
+14:35:38: INFO: Skipping <configure>
+14:35:38: INFO: In handleRead('gpt_main3.bin')
+14:35:38: INFO: Looking for file 'gpt_main3.bin'
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:38: WARNING: Couldn't find the file 'gpt_main3.bin', returning NULL
+14:35:38: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/gpt_main3.bin') with AccessMode='wb'
+14:35:38: INFO: =======================================================
+14:35:38: INFO: <read> (24.0KB) 6 sectors from location 0 FILE: 'gpt_main3.bin'
+14:35:38: INFO: =======================================================
+
+14:35:38: INFO: TARGET SAID: 'INFO: Calling handler for read'
+
+14:35:38: INFO: Time measurement too small --- Overall to target 0.0 seconds (0Bps)
+14:35:38: INFO: =======================================================
+14:35:38: INFO: ===================== SUCCESS =========================
+14:35:38: INFO: =======================================================
+
+
+14:35:38: INFO: ==============================================================
+14:35:38: INFO: Files used and their paths
+14:35:38: INFO:   1 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt'
+14:35:38: INFO:   2 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:38: INFO:   3 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/gpt_main3.bin'
+
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:38: INFO: ==============================================================
+14:35:38: INFO: NOTE: There were WARNINGS!! Repeated here, but please see log for more detail
+Couldn't find the file 'gpt_main3.bin', returning NULL
+NOTE: There were WARNINGS!! Repeated above, but please see log for more detail
+
+
+
+14:35:38: INFO: ==============================================================
+14:35:38: INFO:      _             (done)
+14:35:38: INFO:     | |                 
+14:35:38: INFO:   __| | ___  _ __   ___ 
+14:35:38: INFO:  / _` |/ _ \| '_ \ / _ \
+14:35:38: INFO: | (_| | (_) | | | |  __/
+14:35:38: INFO:  \__,_|\___/|_| |_|\___|
+14:35:38: INFO: {All Finished Successfully}
+
+14:35:38: INFO: Overall to target  0.031 seconds (774.19 KBps)
+
+Writing log, might take a minute
+
+
+Log at 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\port_trace.txt'
+
+[1] ALIGN_TO_128K_1 6 31 26
+[2] cdt 32 63 32
+[3] ddr 64 319 256
+[4] last_parti 320 32762 32443
+[Total] 4
+Analysis completed.
+
+Base Version: 21.06.23.10.31-UotanSpec
+Binary build date: Mar 27 2025 @ 00:38:47
+Incremental Build version: 25.03.27.00.38.47
+
+14:35:38: INFO: Output Dir Already exists C:\Users\Administrator\Desktop\bbf\bff\bin\tmp
+14:35:38: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt') with AccessMode='w'
+14:35:38: INFO: FH_LOADER WAS CALLED EXACTLY LIKE THIS
+************************************************
+fh_loader.exe --port=\\.\COM8 --memoryname=ufs --sendxml=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml --convertprogram2read --mainoutputdir=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp --skip_config --noprompt 
+************************************************
+
+14:35:38: INFO: Current working dir (cwd): C:\Users\Administrator\Desktop\bbf\bff\bin\
+14:35:38: INFO: Showing network mappings to allow debugging
+14:35:39: INFO: User wants to skip device auto configure
+14:35:39: INFO: 
+
+
+
+14:35:39: INFO: Trying to store 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml' in string table
+14:35:39: INFO: Looking for file 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:39: INFO: User wants to talk to port '\\.\COM8'
+14:35:39: INFO: Took       0.00000000 seconds to open port
+14:35:39: INFO: Sorting TAGS to ensure order is <configure>,<erase>, others, <patch>,<power>
+14:35:39: INFO: Skipping <configure>
+14:35:39: INFO: In handleRead('gpt_main4.bin')
+14:35:39: INFO: Looking for file 'gpt_main4.bin'
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:39: WARNING: Couldn't find the file 'gpt_main4.bin', returning NULL
+14:35:39: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/gpt_main4.bin') with AccessMode='wb'
+14:35:39: INFO: =======================================================
+14:35:39: INFO: <read> (24.0KB) 6 sectors from location 0 FILE: 'gpt_main4.bin'
+14:35:39: INFO: =======================================================
+
+14:35:39: INFO: TARGET SAID: 'INFO: Calling handler for read'
+
+14:35:39: INFO: Time measurement too small --- Overall to target 0.0 seconds (0Bps)
+14:35:39: INFO: =======================================================
+14:35:39: INFO: ===================== SUCCESS =========================
+14:35:39: INFO: =======================================================
+
+
+14:35:39: INFO: ==============================================================
+14:35:39: INFO: Files used and their paths
+14:35:39: INFO:   1 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt'
+14:35:39: INFO:   2 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:39: INFO:   3 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/gpt_main4.bin'
+
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:39: INFO: ==============================================================
+14:35:39: INFO: NOTE: There were WARNINGS!! Repeated here, but please see log for more detail
+Couldn't find the file 'gpt_main4.bin', returning NULL
+NOTE: There were WARNINGS!! Repeated above, but please see log for more detail
+
+
+
+14:35:39: INFO: ==============================================================
+14:35:39: INFO:      _             (done)
+14:35:39: INFO:     | |                 
+14:35:39: INFO:   __| | ___  _ __   ___ 
+14:35:39: INFO:  / _` |/ _ \| '_ \ / _ \
+14:35:39: INFO: | (_| | (_) | | | |  __/
+14:35:39: INFO:  \__,_|\___/|_| |_|\___|
+14:35:39: INFO: {All Finished Successfully}
+
+14:35:39: INFO: Overall to target  0.047 seconds (510.64 KBps)
+
+Writing log, might take a minute
+
+
+Log at 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\port_trace.txt'
+
+[1] aop 6 133 128
+[2] tz 134 1157 1024
+[3] hyp 1158 1285 128
+[4] modem 1286 37125 35840
+[5] bluetooth 37126 37381 256
+[6] mdtpsecapp 37382 38405 1024
+[7] mdtp 38406 46597 8192
+[8] abl 46598 46853 256
+[9] dsp 46854 55045 8192
+[10] keymaster 55046 55173 128
+[11] boot 55174 71557 16384
+[12] cmnlib 71558 71685 128
+[13] cmnlib64 71686 71813 128
+[14] devcfg 71814 71845 32
+[15] qupfw 71846 71861 16
+[16] vbmeta 71862 71877 16
+[17] dtbo 71878 78021 6144
+[18] imagefv 78022 78533 512
+[19] uefisecapp 78534 79045 512
+[20] aopbak 79046 79173 128
+[21] tzbak 79174 80197 1024
+[22] hypbak 80198 80325 128
+[23] modembak 80326 116165 35840
+[24] bluetoothbak 116166 116421 256
+[25] mdtpsecappbak 116422 117445 1024
+[26] mdtpbak 117446 125637 8192
+[27] ablbak 125638 125893 256
+[28] dspbak 125894 134085 8192
+[29] keymasterbak 134086 134213 128
+[30] bootbak 134214 150597 16384
+[31] cmnlibbak 150598 150725 128
+[32] cmnlib64bak 150726 150853 128
+[33] devcfgbak 150854 150885 32
+[34] qupfwbak 150886 150901 16
+[35] vbmetabak 150902 150917 16
+[36] dtbobak 150918 157061 6144
+[37] imagefvbak 157062 157573 512
+[38] uefisecappbak 157574 158085 512
+[39] devinfo 158086 158086 1
+[40] dip 158087 158342 256
+[41] apdp 158343 158406 64
+[42] spunvm 158407 160454 2048
+[43] splash 160455 168810 8356
+[44] limits 168811 168811 1
+[45] toolsfv 168812 169067 256
+[46] logfs 169068 171115 2048
+[47] cateloader 171116 171627 512
+[48] rawdump 171628 204395 32768
+[49] logdump 204396 220779 16384
+[50] storsec 220780 220811 32
+[51] multiimgoem 220812 220819 8
+[52] multiimgqti 220820 220827 8
+[53] uefivarstore 220828 220955 128
+[54] secdata 220956 220962 7
+[55] catefv 220963 221090 128
+[56] catecontentfv 221091 221346 256
+[57] last_parti 221347 1048570 827224
+[Total] 57
+Analysis completed.
+
+Base Version: 21.06.23.10.31-UotanSpec
+Binary build date: Mar 27 2025 @ 00:38:47
+Incremental Build version: 25.03.27.00.38.47
+
+14:35:39: INFO: Output Dir Already exists C:\Users\Administrator\Desktop\bbf\bff\bin\tmp
+14:35:39: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt') with AccessMode='w'
+14:35:39: INFO: FH_LOADER WAS CALLED EXACTLY LIKE THIS
+************************************************
+fh_loader.exe --port=\\.\COM8 --memoryname=ufs --sendxml=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml --convertprogram2read --mainoutputdir=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp --skip_config --noprompt 
+************************************************
+
+14:35:39: INFO: Current working dir (cwd): C:\Users\Administrator\Desktop\bbf\bff\bin\
+14:35:39: INFO: Showing network mappings to allow debugging
+14:35:39: INFO: User wants to skip device auto configure
+14:35:39: INFO: 
+
+
+
+14:35:39: INFO: Trying to store 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml' in string table
+14:35:39: INFO: Looking for file 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:39: INFO: User wants to talk to port '\\.\COM8'
+14:35:39: INFO: Took       0.00000000 seconds to open port
+14:35:39: INFO: Sorting TAGS to ensure order is <configure>,<erase>, others, <patch>,<power>
+14:35:39: INFO: Skipping <configure>
+14:35:39: INFO: In handleRead('gpt_main5.bin')
+14:35:39: INFO: Looking for file 'gpt_main5.bin'
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:39: WARNING: Couldn't find the file 'gpt_main5.bin', returning NULL
+14:35:39: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/gpt_main5.bin') with AccessMode='wb'
+14:35:39: INFO: =======================================================
+14:35:39: INFO: <read> (24.0KB) 6 sectors from location 0 FILE: 'gpt_main5.bin'
+14:35:39: INFO: =======================================================
+
+14:35:39: INFO: TARGET SAID: 'INFO: Calling handler for read'
+
+14:35:39: INFO: Time measurement too small --- Overall to target 0.0 seconds (0Bps)
+14:35:39: INFO: =======================================================
+14:35:39: INFO: ===================== SUCCESS =========================
+14:35:39: INFO: =======================================================
+
+
+14:35:39: INFO: ==============================================================
+14:35:39: INFO: Files used and their paths
+14:35:39: INFO:   1 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt'
+14:35:39: INFO:   2 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:39: INFO:   3 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/gpt_main5.bin'
+
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:39: INFO: ==============================================================
+14:35:39: INFO: NOTE: There were WARNINGS!! Repeated here, but please see log for more detail
+Couldn't find the file 'gpt_main5.bin', returning NULL
+NOTE: There were WARNINGS!! Repeated above, but please see log for more detail
+
+
+
+14:35:39: INFO: ==============================================================
+14:35:39: INFO:      _             (done)
+14:35:39: INFO:     | |                 
+14:35:39: INFO:   __| | ___  _ __   ___ 
+14:35:39: INFO:  / _` |/ _ \| '_ \ / _ \
+14:35:39: INFO: | (_| | (_) | | | |  __/
+14:35:39: INFO:  \__,_|\___/|_| |_|\___|
+14:35:39: INFO: {All Finished Successfully}
+
+14:35:39: INFO: Overall to target  0.078 seconds (307.69 KBps)
+
+Writing log, might take a minute
+
+
+Log at 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\port_trace.txt'
+
+[1] ALIGN_TO_128K_2 6 31 26
+[2] modemst1 32 543 512
+[3] modemst2 544 1055 512
+[4] fsg 1056 1567 512
+[5] fsc 1568 1599 32
+[6] last_parti 1600 32762 31163
+[Total] 6
+Analysis completed.
+
+Base Version: 21.06.23.10.31-UotanSpec
+Binary build date: Mar 27 2025 @ 00:38:47
+Incremental Build version: 25.03.27.00.38.47
+
+14:35:39: INFO: Output Dir Already exists C:\Users\Administrator\Desktop\bbf\bff\bin\tmp
+14:35:39: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt') with AccessMode='w'
+14:35:39: INFO: FH_LOADER WAS CALLED EXACTLY LIKE THIS
+************************************************
+fh_loader.exe --port=\\.\COM8 --memoryname=ufs --sendxml=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml --convertprogram2read --mainoutputdir=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp --skip_config --noprompt 
+************************************************
+
+14:35:39: INFO: Current working dir (cwd): C:\Users\Administrator\Desktop\bbf\bff\bin\
+14:35:39: INFO: Showing network mappings to allow debugging
+14:35:40: INFO: User wants to skip device auto configure
+14:35:40: INFO: 
+
+
+
+14:35:40: INFO: Trying to store 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml' in string table
+14:35:40: INFO: Looking for file 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:40: INFO: User wants to talk to port '\\.\COM8'
+14:35:40: INFO: Took       0.00000000 seconds to open port
+14:35:40: INFO: Sorting TAGS to ensure order is <configure>,<erase>, others, <patch>,<power>
+14:35:40: INFO: Skipping <configure>
+14:35:40: INFO: In handleRead('gpt_main6.bin')
+14:35:40: INFO: Looking for file 'gpt_main6.bin'
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:40: WARNING: Couldn't find the file 'gpt_main6.bin', returning NULL
+14:35:40: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/gpt_main6.bin') with AccessMode='wb'
+14:35:40: INFO: =======================================================
+14:35:40: INFO: <read> (24.0KB) 6 sectors from location 0 FILE: 'gpt_main6.bin'
+14:35:40: INFO: =======================================================
+
+14:35:40: INFO: TARGET SAID: 'INFO: Calling handler for read'
+
+14:35:40: INFO: TARGET SAID: 'ERROR: Failed to open the UFS Device slot 0 partition 6'
+
+14:35:40: INFO: TARGET SAID: 'ERROR: Failed to open the device:3 slot:0 partition:6 error:0'
+
+14:35:40: INFO: TARGET SAID: 'ERROR: OPEN handle NULL and no error, weird 344743564'
+
+14:35:40: INFO: TARGET SAID: 'ERROR: Failed to open device, type:UFS, slot:0, lun:6 error:3'
+
+
+	 _____                    
+	|  ___|                   
+	| |__ _ __ _ __ ___  _ __ 
+	|  __| '__| '__/ _ \| '__|
+	| |__| |  | | | (_) | |   
+	\____/_|  |_|  \___/|_|  
+
+
+14:35:40: {ERROR: Please see log}
+
+Writing log, might take a minute
+
+
+Log at 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\port_trace.txt'
+
+2025.05.05_14.35.40.145 [I] info.bat-qcedl 9008读取到设备信息:存储类型:ufs.扇区大小:4096.lun总数:6  
+2025.05.05_14.35.40.329 [I] write.bat-qcedl 回读解析分区表0  
+2025.05.05_14.35.40.396 [I] partable.bat-qcedl-readgpt 接收变量:port:8.memtype:ufs.lun:0.gpttype:main.filepath:C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\ptanalyse\gpt_main0.bin.mode:noprompt.fh:  
+2025.05.05_14.35.40.463 [I] partable.bat-qcedl-readgpt 正在9008回读分区表main0  
+
+Base Version: 21.06.23.10.31-UotanSpec
+Binary build date: Mar 27 2025 @ 00:38:47
+Incremental Build version: 25.03.27.00.38.47
+
+14:35:40: INFO: Output Dir Already exists C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\ptanalyse
+14:35:40: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\ptanalyse/port_trace.txt') with AccessMode='w'
+14:35:40: INFO: FH_LOADER WAS CALLED EXACTLY LIKE THIS
+************************************************
+fh_loader.exe --port=\\.\COM8 --memoryname=ufs --sendxml=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml --convertprogram2read --mainoutputdir=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\ptanalyse --skip_config --noprompt 
+************************************************
+
+14:35:40: INFO: Current working dir (cwd): C:\Users\Administrator\Desktop\bbf\bff\bin\
+14:35:40: INFO: Showing network mappings to allow debugging
+14:35:40: INFO: User wants to skip device auto configure
+14:35:40: INFO: 
+
+
+
+14:35:40: INFO: Trying to store 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml' in string table
+14:35:40: INFO: Looking for file 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:40: INFO: User wants to talk to port '\\.\COM8'
+14:35:40: INFO: Took       0.00000000 seconds to open port
+14:35:40: INFO: Sorting TAGS to ensure order is <configure>,<erase>, others, <patch>,<power>
+14:35:40: INFO: Skipping <configure>
+14:35:40: INFO: In handleRead('gpt_main0.bin')
+14:35:40: INFO: Looking for file 'gpt_main0.bin'
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:40: WARNING: Couldn't find the file 'gpt_main0.bin', returning NULL
+14:35:40: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\ptanalyse/gpt_main0.bin') with AccessMode='wb'
+14:35:40: INFO: =======================================================
+14:35:40: INFO: <read> (24.0KB) 6 sectors from location 0 FILE: 'gpt_main0.bin'
+14:35:40: INFO: =======================================================
+
+14:35:40: INFO: TARGET SAID: 'INFO: Calling handler for read'
+
+14:35:40: INFO: Time measurement too small --- Overall to target 0.0 seconds (0Bps)
+14:35:40: INFO: =======================================================
+14:35:40: INFO: ===================== SUCCESS =========================
+14:35:40: INFO: =======================================================
+
+
+14:35:40: INFO: ==============================================================
+14:35:40: INFO: Files used and their paths
+14:35:40: INFO:   1 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\ptanalyse/port_trace.txt'
+14:35:40: INFO:   2 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:40: INFO:   3 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\ptanalyse/gpt_main0.bin'
+
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:40: INFO: ==============================================================
+14:35:40: INFO: NOTE: There were WARNINGS!! Repeated here, but please see log for more detail
+Couldn't find the file 'gpt_main0.bin', returning NULL
+NOTE: There were WARNINGS!! Repeated above, but please see log for more detail
+
+
+
+14:35:40: INFO: ==============================================================
+14:35:40: INFO:      _             (done)
+14:35:40: INFO:     | |                 
+14:35:40: INFO:   __| | ___  _ __   ___ 
+14:35:40: INFO:  / _` |/ _ \| '_ \ / _ \
+14:35:40: INFO: | (_| | (_) | | | |  __/
+14:35:40: INFO:  \__,_|\___/|_| |_|\___|
+14:35:40: INFO: {All Finished Successfully}
+
+14:35:40: INFO: Overall to target  0.032 seconds (750.00 KBps)
+
+Writing log, might take a minute
+
+
+Log at 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\ptanalyse\port_trace.txt'
+
+移动了         1 个文件。
+2025.05.05_14.35.40.631 [I] partable.bat-qcedl-readgpt 9008回读分区表main0完成  
+[1] ssd 6 7 2
+[2] persist 8 8199 8192
+[3] misc 8200 8455 256
+[4] keystore 8456 8583 128
+[5] frp 8584 8711 128
+[6] super 8712 1581575 1572864
+[7] cache 1581576 1647111 65536
+[8] recovery 1647112 1671687 24576
+[9] vbmeta_system 1671688 1671703 16
+[10] vbmeta_systembak 1671704 1671719 16
+[11] metadata 1671720 1675815 4096
+[12] userdata 1675816 30119930 28444115
+[Total] 12
+Analysis completed.
+2025.05.05_14.35.41.174 [I] write.bat-qcedl 正在9008刷入C:\Users\Administrator\Desktop\bbf\bff\s6superroot\recovery.img.lun:0.起始扇区:1647112.扇区数目:24576  
+2025.05.05_14.35.41.286 [I] write.bat-qcedlxml 接收变量:port:8.memory:ufs.searchpath:C:\Users\Administrator\Desktop\bbf\bff\s6superroot.xml:C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml.fh:  
+2025.05.05_14.35.41.356 [I] write.bat-qcedlxml 开始处理xml  
+已复制         1 个文件。
+2025.05.05_14.35.42.687 [I] write.bat-qcedlxml 刷入raw部分  
+2025.05.05_14.35.42.777 [I] write.bat-qcedlxml 正在9008刷入.search_path和sendxml参数如下:  
+C:\Users\Administrator\Desktop\bbf\bff\s6superroot 
+,C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\qcedlxml\1.xml 
+
+Base Version: 21.06.23.10.31-UotanSpec
+Binary build date: Mar 27 2025 @ 00:38:47
+Incremental Build version: 25.03.27.00.38.47
+
+14:35:42: INFO: Output Dir Already exists C:\Users\Administrator\Desktop\bbf\bff\bin\tmp
+14:35:42: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt') with AccessMode='w'
+14:35:42: INFO: FH_LOADER WAS CALLED EXACTLY LIKE THIS
+************************************************
+fh_loader.exe --port=\\.\COM8 --memoryname=ufs --search_path=C:\Users\Administrator\Desktop\bbf\bff\s6superroot --sendxml=,C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\qcedlxml\1.xml --mainoutputdir=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp --skip_config --showpercentagecomplete --noprompt 
+************************************************
+
+14:35:42: INFO: Current working dir (cwd): C:\Users\Administrator\Desktop\bbf\bff\bin\
+14:35:42: INFO: Showing network mappings to allow debugging
+14:35:42: INFO: User wants to skip device auto configure
+14:35:42: INFO: 
+
+
+
+14:35:42: INFO: Trying to store 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\qcedlxml\1.xml' in string table
+14:35:42: INFO: Looking for file 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\qcedlxml\1.xml'
+14:35:42: INFO: User wants to talk to port '\\.\COM8'
+14:35:42: INFO: Took       0.00000000 seconds to open port
+14:35:42: INFO: Sorting TAGS to ensure order is <configure>,<erase>, others, <patch>,<power>
+14:35:42: INFO: Looking for file 'recovery.img'
+14:35:42: INFO: 
+
+Total to be tansferd with <program> or <read> is 96.00 MB
+
+
+14:35:42: INFO: Skipping <configure>
+14:35:42: INFO: In handleProgram('recovery.img')
+14:35:42: INFO: Looking for file 'recovery.img'
+14:35:42: INFO: =======================================================
+14:35:42: INFO: {<program> FILE: 'C:\Users\Administrator\Desktop\bbf\bff\s6superroot\recovery.img'}
+14:35:42: INFO: {<program> (96.00 MB) 24576 sectors needed at location 1647112 on LUN 0}
+14:35:42: INFO: =======================================================
+
+
+14:35:42: INFO: TARGET SAID: 'INFO: Calling handler for program'
+
+14:35:44: INFO: Overall to target  2.000 seconds (42.00 MBps)
+14:35:44: INFO: {percent files transferred  87.50%}
+14:35:45: INFO: Overall to target  2.312 seconds (41.52 MBps)
+14:35:45: INFO: {percent files transferred 100.00%}
+14:35:45: INFO: 
+14:35:45: INFO: =======================================================
+14:35:45: INFO: ==================== {SUCCESS} ========================
+14:35:45: INFO: =======================================================
+
+
+14:35:45: INFO: {percent files transferred 100.00%}
+14:35:45: INFO: ==============================================================
+14:35:45: INFO: Files used and their paths
+14:35:45: INFO:   1 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt'
+14:35:45: INFO:   2 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\qcedlxml\1.xml'
+14:35:45: INFO:   3 'C:\Users\Administrator\Desktop\bbf\bff\s6superroot\recovery.img'
+
+14:35:45: INFO:      _             (done)
+14:35:45: INFO:     | |                 
+14:35:45: INFO:   __| | ___  _ __   ___ 
+14:35:45: INFO:  / _` |/ _ \| '_ \ / _ \
+14:35:45: INFO: | (_| | (_) | | | |  __/
+14:35:45: INFO:  \__,_|\___/|_| |_|\___|
+14:35:45: INFO: {All Finished Successfully}
+
+14:35:45: INFO: Overall to target  2.375 seconds (40.42 MBps)
+14:35:45: INFO: {percent files transferred 100.00%}
+
+Writing log, might take a minute
+
+
+Log at 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\port_trace.txt'
+
+2025.05.05_14.35.45.307 [I] write.bat-qcedlxml 刷入sparse部分  
+[Error]Format_xml_failed
+2025.05.05_14.35.45.889 [I] write.bat-qcedlxml 跳过刷入sparse部分  
+2025.05.05_14.35.45.946 [I] write.bat-qcedlxml 9008刷入全部完成  
+2025.05.05_14.35.45.995 [I] write.bat-qcedl 9008刷入完成  
+2025.05.05_14.35.46.106 [I] reboot.bat 接收变量:frommode:qcedl.tomode:recovery.chkdev:.rechkwait:  
+2025.05.05_14.35.46.205 [I] reboot.bat 将从qcedl重启到recovery  
+2025.05.05_14.35.46.301 [I] chkdev.bat-qcedl 正在检查设备连接:qcedl  
+2025.05.05_14.35.46.597 [I] chkdev.bat-qcedl 设备已连接:qcedl.端口号:8  
+2025.05.05_14.35.46.689 [I] write.bat-qcedl 接收变量:parname:misc.filepath:tool\Android\misc_torecovery.img.port:8.fh:  
+magic: 1953460066 fileHdrSz: 30319 chunkHdrSz: 29285
+[Error]not_simg
+2025.05.05_14.35.47.097 [I] info.bat-qcedl 接收变量:port:8.fh:  
+2025.05.05_14.35.47.159 [I] info.bat-qcedl 开始9008读取设备信息  
+
+Base Version: 21.06.23.10.31-UotanSpec
+Binary build date: Mar 27 2025 @ 00:38:47
+Incremental Build version: 25.03.27.00.38.47
+
+14:35:47: INFO: Output Dir Already exists C:\Users\Administrator\Desktop\bbf\bff\bin\tmp
+14:35:47: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt') with AccessMode='w'
+14:35:47: INFO: FH_LOADER WAS CALLED EXACTLY LIKE THIS
+************************************************
+fh_loader.exe --port=\\.\COM8 --memoryname=ufs --sendxml=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml --convertprogram2read --mainoutputdir=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp --skip_config --noprompt 
+************************************************
+
+14:35:47: INFO: Current working dir (cwd): C:\Users\Administrator\Desktop\bbf\bff\bin\
+14:35:47: INFO: Showing network mappings to allow debugging
+14:35:47: INFO: User wants to skip device auto configure
+14:35:47: INFO: 
+
+
+
+14:35:47: INFO: Trying to store 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml' in string table
+14:35:47: INFO: Looking for file 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:47: INFO: User wants to talk to port '\\.\COM8'
+14:35:47: INFO: Took       0.00000000 seconds to open port
+14:35:47: INFO: Sorting TAGS to ensure order is <configure>,<erase>, others, <patch>,<power>
+14:35:47: INFO: Skipping <configure>
+14:35:47: INFO: In handleRead('tmp.bin')
+14:35:47: INFO: Looking for file 'tmp.bin'
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:47: WARNING: Couldn't find the file 'tmp.bin', returning NULL
+14:35:47: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/tmp.bin') with AccessMode='wb'
+14:35:47: INFO: =======================================================
+14:35:47: INFO: <read> (24.0KB) 6 sectors from location 0 FILE: 'tmp.bin'
+14:35:47: INFO: =======================================================
+
+14:35:47: INFO: TARGET SAID: 'INFO: Calling handler for read'
+
+14:35:47: INFO: Time measurement too small --- Overall to target 0.0 seconds (0Bps)
+14:35:47: INFO: =======================================================
+14:35:47: INFO: ===================== SUCCESS =========================
+14:35:47: INFO: =======================================================
+
+
+14:35:47: INFO: ==============================================================
+14:35:47: INFO: Files used and their paths
+14:35:47: INFO:   1 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt'
+14:35:47: INFO:   2 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:47: INFO:   3 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/tmp.bin'
+
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:47: INFO: ==============================================================
+14:35:47: INFO: NOTE: There were WARNINGS!! Repeated here, but please see log for more detail
+Couldn't find the file 'tmp.bin', returning NULL
+NOTE: There were WARNINGS!! Repeated above, but please see log for more detail
+
+
+
+14:35:47: INFO: ==============================================================
+14:35:47: INFO:      _             (done)
+14:35:47: INFO:     | |                 
+14:35:47: INFO:   __| | ___  _ __   ___ 
+14:35:47: INFO:  / _` |/ _ \| '_ \ / _ \
+14:35:47: INFO: | (_| | (_) | | | |  __/
+14:35:47: INFO:  \__,_|\___/|_| |_|\___|
+14:35:47: INFO: {All Finished Successfully}
+
+14:35:47: INFO: Overall to target  0.032 seconds (750.00 KBps)
+
+Writing log, might take a minute
+
+
+Log at 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\port_trace.txt'
+
+2025.05.05_14.35.47.376 [I] info.bat-qcedl 测试ufs可用lun总数  
+
+Base Version: 21.06.23.10.31-UotanSpec
+Binary build date: Mar 27 2025 @ 00:38:47
+Incremental Build version: 25.03.27.00.38.47
+
+14:35:47: INFO: Output Dir Already exists C:\Users\Administrator\Desktop\bbf\bff\bin\tmp
+14:35:47: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt') with AccessMode='w'
+14:35:47: INFO: FH_LOADER WAS CALLED EXACTLY LIKE THIS
+************************************************
+fh_loader.exe --port=\\.\COM8 --memoryname=ufs --sendxml=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml --convertprogram2read --mainoutputdir=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp --skip_config --noprompt 
+************************************************
+
+14:35:47: INFO: Current working dir (cwd): C:\Users\Administrator\Desktop\bbf\bff\bin\
+14:35:47: INFO: Showing network mappings to allow debugging
+14:35:47: INFO: User wants to skip device auto configure
+14:35:47: INFO: 
+
+
+
+14:35:47: INFO: Trying to store 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml' in string table
+14:35:47: INFO: Looking for file 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:47: INFO: User wants to talk to port '\\.\COM8'
+14:35:47: INFO: Took       0.00000000 seconds to open port
+14:35:47: INFO: Sorting TAGS to ensure order is <configure>,<erase>, others, <patch>,<power>
+14:35:47: INFO: Skipping <configure>
+14:35:47: INFO: In handleRead('gpt_main0.bin')
+14:35:47: INFO: Looking for file 'gpt_main0.bin'
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:47: WARNING: Couldn't find the file 'gpt_main0.bin', returning NULL
+14:35:47: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/gpt_main0.bin') with AccessMode='wb'
+14:35:47: INFO: =======================================================
+14:35:47: INFO: <read> (24.0KB) 6 sectors from location 0 FILE: 'gpt_main0.bin'
+14:35:47: INFO: =======================================================
+
+14:35:47: INFO: TARGET SAID: 'INFO: Calling handler for read'
+
+14:35:47: INFO: Time measurement too small --- Overall to target 0.0 seconds (0Bps)
+14:35:47: INFO: =======================================================
+14:35:47: INFO: ===================== SUCCESS =========================
+14:35:47: INFO: =======================================================
+
+
+14:35:47: INFO: ==============================================================
+14:35:47: INFO: Files used and their paths
+14:35:47: INFO:   1 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt'
+14:35:47: INFO:   2 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:47: INFO:   3 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/gpt_main0.bin'
+
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:47: INFO: ==============================================================
+14:35:47: INFO: NOTE: There were WARNINGS!! Repeated here, but please see log for more detail
+Couldn't find the file 'gpt_main0.bin', returning NULL
+NOTE: There were WARNINGS!! Repeated above, but please see log for more detail
+
+
+
+14:35:47: INFO: ==============================================================
+14:35:47: INFO:      _             (done)
+14:35:47: INFO:     | |                 
+14:35:47: INFO:   __| | ___  _ __   ___ 
+14:35:47: INFO:  / _` |/ _ \| '_ \ / _ \
+14:35:47: INFO: | (_| | (_) | | | |  __/
+14:35:47: INFO:  \__,_|\___/|_| |_|\___|
+14:35:47: INFO: {All Finished Successfully}
+
+14:35:47: INFO: Overall to target  0.046 seconds (521.74 KBps)
+
+Writing log, might take a minute
+
+
+Log at 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\port_trace.txt'
+
+[1] ssd 6 7 2
+[2] persist 8 8199 8192
+[3] misc 8200 8455 256
+[4] keystore 8456 8583 128
+[5] frp 8584 8711 128
+[6] super 8712 1581575 1572864
+[7] cache 1581576 1647111 65536
+[8] recovery 1647112 1671687 24576
+[9] vbmeta_system 1671688 1671703 16
+[10] vbmeta_systembak 1671704 1671719 16
+[11] metadata 1671720 1675815 4096
+[12] userdata 1675816 30119930 28444115
+[Total] 12
+Analysis completed.
+
+Base Version: 21.06.23.10.31-UotanSpec
+Binary build date: Mar 27 2025 @ 00:38:47
+Incremental Build version: 25.03.27.00.38.47
+
+14:35:47: INFO: Output Dir Already exists C:\Users\Administrator\Desktop\bbf\bff\bin\tmp
+14:35:47: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt') with AccessMode='w'
+14:35:47: INFO: FH_LOADER WAS CALLED EXACTLY LIKE THIS
+************************************************
+fh_loader.exe --port=\\.\COM8 --memoryname=ufs --sendxml=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml --convertprogram2read --mainoutputdir=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp --skip_config --noprompt 
+************************************************
+
+14:35:47: INFO: Current working dir (cwd): C:\Users\Administrator\Desktop\bbf\bff\bin\
+14:35:47: INFO: Showing network mappings to allow debugging
+14:35:47: INFO: User wants to skip device auto configure
+14:35:47: INFO: 
+
+
+
+14:35:47: INFO: Trying to store 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml' in string table
+14:35:47: INFO: Looking for file 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:47: INFO: User wants to talk to port '\\.\COM8'
+14:35:47: INFO: Took       0.00000000 seconds to open port
+14:35:47: INFO: Sorting TAGS to ensure order is <configure>,<erase>, others, <patch>,<power>
+14:35:47: INFO: Skipping <configure>
+14:35:47: INFO: In handleRead('gpt_main1.bin')
+14:35:47: INFO: Looking for file 'gpt_main1.bin'
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:47: WARNING: Couldn't find the file 'gpt_main1.bin', returning NULL
+14:35:47: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/gpt_main1.bin') with AccessMode='wb'
+14:35:47: INFO: =======================================================
+14:35:47: INFO: <read> (24.0KB) 6 sectors from location 0 FILE: 'gpt_main1.bin'
+14:35:47: INFO: =======================================================
+
+14:35:47: INFO: TARGET SAID: 'INFO: Calling handler for read'
+
+14:35:47: INFO: Time measurement too small --- Overall to target 0.0 seconds (0Bps)
+14:35:48: INFO: =======================================================
+14:35:48: INFO: ===================== SUCCESS =========================
+14:35:48: INFO: =======================================================
+
+
+14:35:48: INFO: ==============================================================
+14:35:48: INFO: Files used and their paths
+14:35:48: INFO:   1 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt'
+14:35:48: INFO:   2 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:48: INFO:   3 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/gpt_main1.bin'
+
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:48: INFO: ==============================================================
+14:35:48: INFO: NOTE: There were WARNINGS!! Repeated here, but please see log for more detail
+Couldn't find the file 'gpt_main1.bin', returning NULL
+NOTE: There were WARNINGS!! Repeated above, but please see log for more detail
+
+
+
+14:35:48: INFO: ==============================================================
+14:35:48: INFO:      _             (done)
+14:35:48: INFO:     | |                 
+14:35:48: INFO:   __| | ___  _ __   ___ 
+14:35:48: INFO:  / _` |/ _ \| '_ \ / _ \
+14:35:48: INFO: | (_| | (_) | | | |  __/
+14:35:48: INFO:  \__,_|\___/|_| |_|\___|
+14:35:48: INFO: {All Finished Successfully}
+
+14:35:48: INFO: Overall to target  0.047 seconds (510.64 KBps)
+
+Writing log, might take a minute
+
+
+Log at 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\port_trace.txt'
+
+[1] xbl 6 901 896
+[2] xbl_config 902 933 32
+[3] last_parti 934 2042 1109
+[Total] 3
+Analysis completed.
+
+Base Version: 21.06.23.10.31-UotanSpec
+Binary build date: Mar 27 2025 @ 00:38:47
+Incremental Build version: 25.03.27.00.38.47
+
+14:35:48: INFO: Output Dir Already exists C:\Users\Administrator\Desktop\bbf\bff\bin\tmp
+14:35:48: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt') with AccessMode='w'
+14:35:48: INFO: FH_LOADER WAS CALLED EXACTLY LIKE THIS
+************************************************
+fh_loader.exe --port=\\.\COM8 --memoryname=ufs --sendxml=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml --convertprogram2read --mainoutputdir=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp --skip_config --noprompt 
+************************************************
+
+14:35:48: INFO: Current working dir (cwd): C:\Users\Administrator\Desktop\bbf\bff\bin\
+14:35:48: INFO: Showing network mappings to allow debugging
+14:35:48: INFO: User wants to skip device auto configure
+14:35:48: INFO: 
+
+
+
+14:35:48: INFO: Trying to store 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml' in string table
+14:35:48: INFO: Looking for file 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:48: INFO: User wants to talk to port '\\.\COM8'
+14:35:48: INFO: Took       0.00000000 seconds to open port
+14:35:48: INFO: Sorting TAGS to ensure order is <configure>,<erase>, others, <patch>,<power>
+14:35:48: INFO: Skipping <configure>
+14:35:48: INFO: In handleRead('gpt_main2.bin')
+14:35:48: INFO: Looking for file 'gpt_main2.bin'
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:48: WARNING: Couldn't find the file 'gpt_main2.bin', returning NULL
+14:35:48: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/gpt_main2.bin') with AccessMode='wb'
+14:35:48: INFO: =======================================================
+14:35:48: INFO: <read> (24.0KB) 6 sectors from location 0 FILE: 'gpt_main2.bin'
+14:35:48: INFO: =======================================================
+
+14:35:48: INFO: TARGET SAID: 'INFO: Calling handler for read'
+
+14:35:48: INFO: Time measurement too small --- Overall to target 0.0 seconds (0Bps)
+14:35:48: INFO: =======================================================
+14:35:48: INFO: ===================== SUCCESS =========================
+14:35:48: INFO: =======================================================
+
+
+14:35:48: INFO: ==============================================================
+14:35:48: INFO: Files used and their paths
+14:35:48: INFO:   1 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt'
+14:35:48: INFO:   2 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:48: INFO:   3 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/gpt_main2.bin'
+
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:48: INFO: ==============================================================
+14:35:48: INFO: NOTE: There were WARNINGS!! Repeated here, but please see log for more detail
+Couldn't find the file 'gpt_main2.bin', returning NULL
+NOTE: There were WARNINGS!! Repeated above, but please see log for more detail
+
+
+
+14:35:48: INFO: ==============================================================
+14:35:48: INFO:      _             (done)
+14:35:48: INFO:     | |                 
+14:35:48: INFO:   __| | ___  _ __   ___ 
+14:35:48: INFO:  / _` |/ _ \| '_ \ / _ \
+14:35:48: INFO: | (_| | (_) | | | |  __/
+14:35:48: INFO:  \__,_|\___/|_| |_|\___|
+14:35:48: INFO: {All Finished Successfully}
+
+14:35:48: INFO: Overall to target  0.031 seconds (774.19 KBps)
+
+Writing log, might take a minute
+
+
+Log at 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\port_trace.txt'
+
+[1] xblbak 6 901 896
+[2] xbl_configbak 902 933 32
+[3] last_parti 934 2042 1109
+[Total] 3
+Analysis completed.
+
+Base Version: 21.06.23.10.31-UotanSpec
+Binary build date: Mar 27 2025 @ 00:38:47
+Incremental Build version: 25.03.27.00.38.47
+
+14:35:48: INFO: Output Dir Already exists C:\Users\Administrator\Desktop\bbf\bff\bin\tmp
+14:35:48: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt') with AccessMode='w'
+14:35:48: INFO: FH_LOADER WAS CALLED EXACTLY LIKE THIS
+************************************************
+fh_loader.exe --port=\\.\COM8 --memoryname=ufs --sendxml=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml --convertprogram2read --mainoutputdir=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp --skip_config --noprompt 
+************************************************
+
+14:35:48: INFO: Current working dir (cwd): C:\Users\Administrator\Desktop\bbf\bff\bin\
+14:35:48: INFO: Showing network mappings to allow debugging
+14:35:49: INFO: User wants to skip device auto configure
+14:35:49: INFO: 
+
+
+
+14:35:49: INFO: Trying to store 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml' in string table
+14:35:49: INFO: Looking for file 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:49: INFO: User wants to talk to port '\\.\COM8'
+14:35:49: INFO: Took       0.00000000 seconds to open port
+14:35:49: INFO: Sorting TAGS to ensure order is <configure>,<erase>, others, <patch>,<power>
+14:35:49: INFO: Skipping <configure>
+14:35:49: INFO: In handleRead('gpt_main3.bin')
+14:35:49: INFO: Looking for file 'gpt_main3.bin'
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:49: WARNING: Couldn't find the file 'gpt_main3.bin', returning NULL
+14:35:49: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/gpt_main3.bin') with AccessMode='wb'
+14:35:49: INFO: =======================================================
+14:35:49: INFO: <read> (24.0KB) 6 sectors from location 0 FILE: 'gpt_main3.bin'
+14:35:49: INFO: =======================================================
+
+14:35:49: INFO: TARGET SAID: 'INFO: Calling handler for read'
+
+14:35:49: INFO: Time measurement too small --- Overall to target 0.0 seconds (0Bps)
+14:35:49: INFO: =======================================================
+14:35:49: INFO: ===================== SUCCESS =========================
+14:35:49: INFO: =======================================================
+
+
+14:35:49: INFO: ==============================================================
+14:35:49: INFO: Files used and their paths
+14:35:49: INFO:   1 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt'
+14:35:49: INFO:   2 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:49: INFO:   3 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/gpt_main3.bin'
+
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:49: INFO: ==============================================================
+14:35:49: INFO: NOTE: There were WARNINGS!! Repeated here, but please see log for more detail
+Couldn't find the file 'gpt_main3.bin', returning NULL
+NOTE: There were WARNINGS!! Repeated above, but please see log for more detail
+
+
+
+14:35:49: INFO: ==============================================================
+14:35:49: INFO:      _             (done)
+14:35:49: INFO:     | |                 
+14:35:49: INFO:   __| | ___  _ __   ___ 
+14:35:49: INFO:  / _` |/ _ \| '_ \ / _ \
+14:35:49: INFO: | (_| | (_) | | | |  __/
+14:35:49: INFO:  \__,_|\___/|_| |_|\___|
+14:35:49: INFO: {All Finished Successfully}
+
+14:35:49: INFO: Overall to target  0.032 seconds (750.00 KBps)
+
+Writing log, might take a minute
+
+
+Log at 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\port_trace.txt'
+
+[1] ALIGN_TO_128K_1 6 31 26
+[2] cdt 32 63 32
+[3] ddr 64 319 256
+[4] last_parti 320 32762 32443
+[Total] 4
+Analysis completed.
+
+Base Version: 21.06.23.10.31-UotanSpec
+Binary build date: Mar 27 2025 @ 00:38:47
+Incremental Build version: 25.03.27.00.38.47
+
+14:35:49: INFO: Output Dir Already exists C:\Users\Administrator\Desktop\bbf\bff\bin\tmp
+14:35:49: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt') with AccessMode='w'
+14:35:49: INFO: FH_LOADER WAS CALLED EXACTLY LIKE THIS
+************************************************
+fh_loader.exe --port=\\.\COM8 --memoryname=ufs --sendxml=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml --convertprogram2read --mainoutputdir=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp --skip_config --noprompt 
+************************************************
+
+14:35:49: INFO: Current working dir (cwd): C:\Users\Administrator\Desktop\bbf\bff\bin\
+14:35:49: INFO: Showing network mappings to allow debugging
+14:35:49: INFO: User wants to skip device auto configure
+14:35:49: INFO: 
+
+
+
+14:35:49: INFO: Trying to store 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml' in string table
+14:35:49: INFO: Looking for file 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:49: INFO: User wants to talk to port '\\.\COM8'
+14:35:49: INFO: Took       0.00000000 seconds to open port
+14:35:49: INFO: Sorting TAGS to ensure order is <configure>,<erase>, others, <patch>,<power>
+14:35:49: INFO: Skipping <configure>
+14:35:49: INFO: In handleRead('gpt_main4.bin')
+14:35:49: INFO: Looking for file 'gpt_main4.bin'
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:49: WARNING: Couldn't find the file 'gpt_main4.bin', returning NULL
+14:35:49: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/gpt_main4.bin') with AccessMode='wb'
+14:35:49: INFO: =======================================================
+14:35:49: INFO: <read> (24.0KB) 6 sectors from location 0 FILE: 'gpt_main4.bin'
+14:35:49: INFO: =======================================================
+
+14:35:49: INFO: TARGET SAID: 'INFO: Calling handler for read'
+
+14:35:49: INFO: Time measurement too small --- Overall to target 0.0 seconds (0Bps)
+14:35:49: INFO: =======================================================
+14:35:49: INFO: ===================== SUCCESS =========================
+14:35:49: INFO: =======================================================
+
+
+14:35:49: INFO: ==============================================================
+14:35:49: INFO: Files used and their paths
+14:35:49: INFO:   1 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt'
+14:35:49: INFO:   2 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:49: INFO:   3 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/gpt_main4.bin'
+
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:49: INFO: ==============================================================
+14:35:49: INFO: NOTE: There were WARNINGS!! Repeated here, but please see log for more detail
+Couldn't find the file 'gpt_main4.bin', returning NULL
+NOTE: There were WARNINGS!! Repeated above, but please see log for more detail
+
+
+
+14:35:49: INFO: ==============================================================
+14:35:49: INFO:      _             (done)
+14:35:49: INFO:     | |                 
+14:35:49: INFO:   __| | ___  _ __   ___ 
+14:35:49: INFO:  / _` |/ _ \| '_ \ / _ \
+14:35:49: INFO: | (_| | (_) | | | |  __/
+14:35:49: INFO:  \__,_|\___/|_| |_|\___|
+14:35:49: INFO: {All Finished Successfully}
+
+14:35:49: INFO: Overall to target  0.047 seconds (510.64 KBps)
+
+Writing log, might take a minute
+
+
+Log at 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\port_trace.txt'
+
+[1] aop 6 133 128
+[2] tz 134 1157 1024
+[3] hyp 1158 1285 128
+[4] modem 1286 37125 35840
+[5] bluetooth 37126 37381 256
+[6] mdtpsecapp 37382 38405 1024
+[7] mdtp 38406 46597 8192
+[8] abl 46598 46853 256
+[9] dsp 46854 55045 8192
+[10] keymaster 55046 55173 128
+[11] boot 55174 71557 16384
+[12] cmnlib 71558 71685 128
+[13] cmnlib64 71686 71813 128
+[14] devcfg 71814 71845 32
+[15] qupfw 71846 71861 16
+[16] vbmeta 71862 71877 16
+[17] dtbo 71878 78021 6144
+[18] imagefv 78022 78533 512
+[19] uefisecapp 78534 79045 512
+[20] aopbak 79046 79173 128
+[21] tzbak 79174 80197 1024
+[22] hypbak 80198 80325 128
+[23] modembak 80326 116165 35840
+[24] bluetoothbak 116166 116421 256
+[25] mdtpsecappbak 116422 117445 1024
+[26] mdtpbak 117446 125637 8192
+[27] ablbak 125638 125893 256
+[28] dspbak 125894 134085 8192
+[29] keymasterbak 134086 134213 128
+[30] bootbak 134214 150597 16384
+[31] cmnlibbak 150598 150725 128
+[32] cmnlib64bak 150726 150853 128
+[33] devcfgbak 150854 150885 32
+[34] qupfwbak 150886 150901 16
+[35] vbmetabak 150902 150917 16
+[36] dtbobak 150918 157061 6144
+[37] imagefvbak 157062 157573 512
+[38] uefisecappbak 157574 158085 512
+[39] devinfo 158086 158086 1
+[40] dip 158087 158342 256
+[41] apdp 158343 158406 64
+[42] spunvm 158407 160454 2048
+[43] splash 160455 168810 8356
+[44] limits 168811 168811 1
+[45] toolsfv 168812 169067 256
+[46] logfs 169068 171115 2048
+[47] cateloader 171116 171627 512
+[48] rawdump 171628 204395 32768
+[49] logdump 204396 220779 16384
+[50] storsec 220780 220811 32
+[51] multiimgoem 220812 220819 8
+[52] multiimgqti 220820 220827 8
+[53] uefivarstore 220828 220955 128
+[54] secdata 220956 220962 7
+[55] catefv 220963 221090 128
+[56] catecontentfv 221091 221346 256
+[57] last_parti 221347 1048570 827224
+[Total] 57
+Analysis completed.
+
+Base Version: 21.06.23.10.31-UotanSpec
+Binary build date: Mar 27 2025 @ 00:38:47
+Incremental Build version: 25.03.27.00.38.47
+
+14:35:50: INFO: Output Dir Already exists C:\Users\Administrator\Desktop\bbf\bff\bin\tmp
+14:35:50: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt') with AccessMode='w'
+14:35:50: INFO: FH_LOADER WAS CALLED EXACTLY LIKE THIS
+************************************************
+fh_loader.exe --port=\\.\COM8 --memoryname=ufs --sendxml=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml --convertprogram2read --mainoutputdir=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp --skip_config --noprompt 
+************************************************
+
+14:35:50: INFO: Current working dir (cwd): C:\Users\Administrator\Desktop\bbf\bff\bin\
+14:35:50: INFO: Showing network mappings to allow debugging
+14:35:50: INFO: User wants to skip device auto configure
+14:35:50: INFO: 
+
+
+
+14:35:50: INFO: Trying to store 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml' in string table
+14:35:50: INFO: Looking for file 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:50: INFO: User wants to talk to port '\\.\COM8'
+14:35:50: INFO: Took       0.00000000 seconds to open port
+14:35:50: INFO: Sorting TAGS to ensure order is <configure>,<erase>, others, <patch>,<power>
+14:35:50: INFO: Skipping <configure>
+14:35:50: INFO: In handleRead('gpt_main5.bin')
+14:35:50: INFO: Looking for file 'gpt_main5.bin'
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:50: WARNING: Couldn't find the file 'gpt_main5.bin', returning NULL
+14:35:50: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/gpt_main5.bin') with AccessMode='wb'
+14:35:50: INFO: =======================================================
+14:35:50: INFO: <read> (24.0KB) 6 sectors from location 0 FILE: 'gpt_main5.bin'
+14:35:50: INFO: =======================================================
+
+14:35:50: INFO: TARGET SAID: 'INFO: Calling handler for read'
+
+14:35:50: INFO: Time measurement too small --- Overall to target 0.0 seconds (0Bps)
+14:35:50: INFO: =======================================================
+14:35:50: INFO: ===================== SUCCESS =========================
+14:35:50: INFO: =======================================================
+
+
+14:35:50: INFO: ==============================================================
+14:35:50: INFO: Files used and their paths
+14:35:50: INFO:   1 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt'
+14:35:50: INFO:   2 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:50: INFO:   3 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/gpt_main5.bin'
+
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:50: INFO: ==============================================================
+14:35:50: INFO: NOTE: There were WARNINGS!! Repeated here, but please see log for more detail
+Couldn't find the file 'gpt_main5.bin', returning NULL
+NOTE: There were WARNINGS!! Repeated above, but please see log for more detail
+
+
+
+14:35:50: INFO: ==============================================================
+14:35:50: INFO:      _             (done)
+14:35:50: INFO:     | |                 
+14:35:50: INFO:   __| | ___  _ __   ___ 
+14:35:50: INFO:  / _` |/ _ \| '_ \ / _ \
+14:35:50: INFO: | (_| | (_) | | | |  __/
+14:35:50: INFO:  \__,_|\___/|_| |_|\___|
+14:35:50: INFO: {All Finished Successfully}
+
+14:35:50: INFO: Overall to target  0.032 seconds (750.00 KBps)
+
+Writing log, might take a minute
+
+
+Log at 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\port_trace.txt'
+
+[1] ALIGN_TO_128K_2 6 31 26
+[2] modemst1 32 543 512
+[3] modemst2 544 1055 512
+[4] fsg 1056 1567 512
+[5] fsc 1568 1599 32
+[6] last_parti 1600 32762 31163
+[Total] 6
+Analysis completed.
+
+Base Version: 21.06.23.10.31-UotanSpec
+Binary build date: Mar 27 2025 @ 00:38:47
+Incremental Build version: 25.03.27.00.38.47
+
+14:35:50: INFO: Output Dir Already exists C:\Users\Administrator\Desktop\bbf\bff\bin\tmp
+14:35:50: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt') with AccessMode='w'
+14:35:50: INFO: FH_LOADER WAS CALLED EXACTLY LIKE THIS
+************************************************
+fh_loader.exe --port=\\.\COM8 --memoryname=ufs --sendxml=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml --convertprogram2read --mainoutputdir=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp --skip_config --noprompt 
+************************************************
+
+14:35:50: INFO: Current working dir (cwd): C:\Users\Administrator\Desktop\bbf\bff\bin\
+14:35:50: INFO: Showing network mappings to allow debugging
+14:35:50: INFO: User wants to skip device auto configure
+14:35:50: INFO: 
+
+
+
+14:35:50: INFO: Trying to store 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml' in string table
+14:35:50: INFO: Looking for file 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:50: INFO: User wants to talk to port '\\.\COM8'
+14:35:50: INFO: Took       0.01600000 seconds to open port
+14:35:50: INFO: Sorting TAGS to ensure order is <configure>,<erase>, others, <patch>,<power>
+14:35:50: INFO: Skipping <configure>
+14:35:50: INFO: In handleRead('gpt_main6.bin')
+14:35:50: INFO: Looking for file 'gpt_main6.bin'
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:50: WARNING: Couldn't find the file 'gpt_main6.bin', returning NULL
+14:35:50: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/gpt_main6.bin') with AccessMode='wb'
+14:35:50: INFO: =======================================================
+14:35:50: INFO: <read> (24.0KB) 6 sectors from location 0 FILE: 'gpt_main6.bin'
+14:35:50: INFO: =======================================================
+
+14:35:50: INFO: TARGET SAID: 'INFO: Calling handler for read'
+
+14:35:50: INFO: TARGET SAID: 'ERROR: Failed to open the UFS Device slot 0 partition 6'
+
+14:35:50: INFO: TARGET SAID: 'ERROR: Failed to open the device:3 slot:0 partition:6 error:0'
+
+14:35:50: INFO: TARGET SAID: 'ERROR: OPEN handle NULL and no error, weird 344743564'
+
+14:35:50: INFO: TARGET SAID: 'ERROR: Failed to open device, type:UFS, slot:0, lun:6 error:3'
+
+
+	 _____                    
+	|  ___|                   
+	| |__ _ __ _ __ ___  _ __ 
+	|  __| '__| '__/ _ \| '__|
+	| |__| |  | | | (_) | |   
+	\____/_|  |_|  \___/|_|  
+
+
+14:35:50: {ERROR: Please see log}
+
+Writing log, might take a minute
+
+
+Log at 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\port_trace.txt'
+
+2025.05.05_14.35.50.742 [I] info.bat-qcedl 9008读取到设备信息:存储类型:ufs.扇区大小:4096.lun总数:6  
+2025.05.05_14.35.50.798 [I] write.bat-qcedl 回读解析分区表0  
+2025.05.05_14.35.50.863 [I] partable.bat-qcedl-readgpt 接收变量:port:8.memtype:ufs.lun:0.gpttype:main.filepath:C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\ptanalyse\gpt_main0.bin.mode:noprompt.fh:  
+2025.05.05_14.35.50.925 [I] partable.bat-qcedl-readgpt 正在9008回读分区表main0  
+
+Base Version: 21.06.23.10.31-UotanSpec
+Binary build date: Mar 27 2025 @ 00:38:47
+Incremental Build version: 25.03.27.00.38.47
+
+14:35:50: INFO: Output Dir Already exists C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\ptanalyse
+14:35:50: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\ptanalyse/port_trace.txt') with AccessMode='w'
+14:35:50: INFO: FH_LOADER WAS CALLED EXACTLY LIKE THIS
+************************************************
+fh_loader.exe --port=\\.\COM8 --memoryname=ufs --sendxml=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml --convertprogram2read --mainoutputdir=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\ptanalyse --skip_config --noprompt 
+************************************************
+
+14:35:50: INFO: Current working dir (cwd): C:\Users\Administrator\Desktop\bbf\bff\bin\
+14:35:50: INFO: Showing network mappings to allow debugging
+14:35:50: INFO: User wants to skip device auto configure
+14:35:50: INFO: 
+
+
+
+14:35:50: INFO: Trying to store 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml' in string table
+14:35:50: INFO: Looking for file 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:50: INFO: User wants to talk to port '\\.\COM8'
+14:35:51: INFO: Took       0.00000000 seconds to open port
+14:35:51: INFO: Sorting TAGS to ensure order is <configure>,<erase>, others, <patch>,<power>
+14:35:51: INFO: Skipping <configure>
+14:35:51: INFO: In handleRead('gpt_main0.bin')
+14:35:51: INFO: Looking for file 'gpt_main0.bin'
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:51: WARNING: Couldn't find the file 'gpt_main0.bin', returning NULL
+14:35:51: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\ptanalyse/gpt_main0.bin') with AccessMode='wb'
+14:35:51: INFO: =======================================================
+14:35:51: INFO: <read> (24.0KB) 6 sectors from location 0 FILE: 'gpt_main0.bin'
+14:35:51: INFO: =======================================================
+
+14:35:51: INFO: TARGET SAID: 'INFO: Calling handler for read'
+
+14:35:51: INFO: Time measurement too small --- Overall to target 0.0 seconds (0Bps)
+14:35:51: INFO: =======================================================
+14:35:51: INFO: ===================== SUCCESS =========================
+14:35:51: INFO: =======================================================
+
+
+14:35:51: INFO: ==============================================================
+14:35:51: INFO: Files used and their paths
+14:35:51: INFO:   1 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\ptanalyse/port_trace.txt'
+14:35:51: INFO:   2 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:51: INFO:   3 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\ptanalyse/gpt_main0.bin'
+
+
+
+	                         (_)            
+	__      ____ _ _ __ _ __  _ _ __   __ _ 
+	\ \ /\ / / _` | '__| '_ \| | '_ \ / _` |
+	 \ V  V / (_| | |  | | | | | | | | (_| |
+	  \_/\_/ \__,_|_|  |_| |_|_|_| |_|\__, |
+	                                   __/ |
+	                                  |___/ 
+
+
+14:35:51: INFO: ==============================================================
+14:35:51: INFO: NOTE: There were WARNINGS!! Repeated here, but please see log for more detail
+Couldn't find the file 'gpt_main0.bin', returning NULL
+NOTE: There were WARNINGS!! Repeated above, but please see log for more detail
+
+
+
+14:35:51: INFO: ==============================================================
+14:35:51: INFO:      _             (done)
+14:35:51: INFO:     | |                 
+14:35:51: INFO:   __| | ___  _ __   ___ 
+14:35:51: INFO:  / _` |/ _ \| '_ \ / _ \
+14:35:51: INFO: | (_| | (_) | | | |  __/
+14:35:51: INFO:  \__,_|\___/|_| |_|\___|
+14:35:51: INFO: {All Finished Successfully}
+
+14:35:51: INFO: Overall to target  0.032 seconds (750.00 KBps)
+
+Writing log, might take a minute
+
+
+Log at 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\ptanalyse\port_trace.txt'
+
+移动了         1 个文件。
+2025.05.05_14.35.51.090 [I] partable.bat-qcedl-readgpt 9008回读分区表main0完成  
+[1] ssd 6 7 2
+[2] persist 8 8199 8192
+[3] misc 8200 8455 256
+[4] keystore 8456 8583 128
+[5] frp 8584 8711 128
+[6] super 8712 1581575 1572864
+[7] cache 1581576 1647111 65536
+[8] recovery 1647112 1671687 24576
+[9] vbmeta_system 1671688 1671703 16
+[10] vbmeta_systembak 1671704 1671719 16
+[11] metadata 1671720 1675815 4096
+[12] userdata 1675816 30119930 28444115
+[Total] 12
+Analysis completed.
+2025.05.05_14.35.51.578 [I] write.bat-qcedl 正在9008刷入tool\Android\misc_torecovery.img.lun:0.起始扇区:8200.扇区数目:256  
+2025.05.05_14.35.51.642 [I] write.bat-qcedlxml 接收变量:port:8.memory:ufs.searchpath:C:\Users\Administrator\Desktop\bbf\bff\bin\tool\Android.xml:C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml.fh:  
+2025.05.05_14.35.51.691 [I] write.bat-qcedlxml 开始处理xml  
+已复制         1 个文件。
+2025.05.05_14.35.52.691 [I] write.bat-qcedlxml 刷入raw部分  
+2025.05.05_14.35.52.743 [I] write.bat-qcedlxml 正在9008刷入.search_path和sendxml参数如下:  
+C:\Users\Administrator\Desktop\bbf\bff\bin\tool\Android 
+,C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\qcedlxml\1.xml 
+
+Base Version: 21.06.23.10.31-UotanSpec
+Binary build date: Mar 27 2025 @ 00:38:47
+Incremental Build version: 25.03.27.00.38.47
+
+14:35:52: INFO: Output Dir Already exists C:\Users\Administrator\Desktop\bbf\bff\bin\tmp
+14:35:52: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt') with AccessMode='w'
+14:35:52: INFO: FH_LOADER WAS CALLED EXACTLY LIKE THIS
+************************************************
+fh_loader.exe --port=\\.\COM8 --memoryname=ufs --search_path=C:\Users\Administrator\Desktop\bbf\bff\bin\tool\Android --sendxml=,C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\qcedlxml\1.xml --mainoutputdir=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp --skip_config --showpercentagecomplete --noprompt 
+************************************************
+
+14:35:52: INFO: Current working dir (cwd): C:\Users\Administrator\Desktop\bbf\bff\bin\
+14:35:52: INFO: Showing network mappings to allow debugging
+14:35:52: INFO: User wants to skip device auto configure
+14:35:52: INFO: 
+
+
+
+14:35:52: INFO: Trying to store 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\qcedlxml\1.xml' in string table
+14:35:52: INFO: Looking for file 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\qcedlxml\1.xml'
+14:35:52: INFO: User wants to talk to port '\\.\COM8'
+14:35:52: INFO: Took       0.00000000 seconds to open port
+14:35:52: INFO: Sorting TAGS to ensure order is <configure>,<erase>, others, <patch>,<power>
+14:35:52: INFO: Looking for file 'misc_torecovery.img'
+14:35:52: INFO: 
+
+Total to be tansferd with <program> or <read> is 8.00 KB
+
+
+14:35:52: INFO: Skipping <configure>
+14:35:52: INFO: In handleProgram('misc_torecovery.img')
+14:35:52: INFO: Looking for file 'misc_torecovery.img'
+14:35:52: INFO: =======================================================
+14:35:52: INFO: {<program> FILE: 'C:\Users\Administrator\Desktop\bbf\bff\bin\tool\Android\misc_torecovery.img'}
+14:35:52: INFO: {<program> (8.00 KB) 2 sectors needed at location 8200 on LUN 0}
+14:35:52: INFO: =======================================================
+
+
+14:35:52: INFO: TARGET SAID: 'INFO: Calling handler for program'
+
+14:35:52: INFO: Time measurement too small --- Overall to target 0.0 seconds (0Bps)
+14:35:52: INFO: 
+14:35:52: INFO: =======================================================
+14:35:52: INFO: ==================== {SUCCESS} ========================
+14:35:52: INFO: =======================================================
+
+
+14:35:52: INFO: {percent files transferred 100.00%}
+14:35:52: INFO: ==============================================================
+14:35:52: INFO: Files used and their paths
+14:35:52: INFO:   1 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt'
+14:35:52: INFO:   2 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\qcedlxml\1.xml'
+14:35:52: INFO:   3 'C:\Users\Administrator\Desktop\bbf\bff\bin\tool\Android\misc_torecovery.img'
+
+14:35:52: INFO:      _             (done)
+14:35:52: INFO:     | |                 
+14:35:52: INFO:   __| | ___  _ __   ___ 
+14:35:52: INFO:  / _` |/ _ \| '_ \ / _ \
+14:35:52: INFO: | (_| | (_) | | | |  __/
+14:35:52: INFO:  \__,_|\___/|_| |_|\___|
+14:35:52: INFO: {All Finished Successfully}
+
+14:35:52: INFO: Overall to target  0.062 seconds (129.03 KBps)
+14:35:52: INFO: {percent files transferred 100.00%}
+
+Writing log, might take a minute
+
+
+Log at 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\port_trace.txt'
+
+2025.05.05_14.35.52.942 [I] write.bat-qcedlxml 刷入sparse部分  
+[Error]Format_xml_failed
+2025.05.05_14.35.53.476 [I] write.bat-qcedlxml 跳过刷入sparse部分  
+2025.05.05_14.35.53.529 [I] write.bat-qcedlxml 9008刷入全部完成  
+2025.05.05_14.35.53.580 [I] write.bat-qcedl 9008刷入完成  
+2025.05.05_14.35.53.640 [I] reboot.bat 接收变量:frommode:qcedl.tomode:system.chkdev:.rechkwait:  
+2025.05.05_14.35.53.716 [I] reboot.bat 将从qcedl重启到system  
+2025.05.05_14.35.53.806 [I] chkdev.bat-qcedl 正在检查设备连接:qcedl  
+2025.05.05_14.35.54.021 [I] chkdev.bat-qcedl 设备已连接:qcedl.端口号:8  
+
+Base Version: 21.06.23.10.31-UotanSpec
+Binary build date: Mar 27 2025 @ 00:38:47
+Incremental Build version: 25.03.27.00.38.47
+
+14:35:54: INFO: Output Dir Already exists C:\Users\Administrator\Desktop\bbf\bff\bin\tmp
+14:35:54: INFO: 1. Calling fopen('C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt') with AccessMode='w'
+14:35:54: INFO: FH_LOADER WAS CALLED EXACTLY LIKE THIS
+************************************************
+fh_loader.exe --port=\\.\COM8 --memoryname=ufs --sendxml=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml --mainoutputdir=C:\Users\Administrator\Desktop\bbf\bff\bin\tmp --skip_config --noprompt 
+************************************************
+
+14:35:54: INFO: Current working dir (cwd): C:\Users\Administrator\Desktop\bbf\bff\bin\
+14:35:54: INFO: Showing network mappings to allow debugging
+14:35:54: INFO: User wants to skip device auto configure
+14:35:54: INFO: 
+
+
+
+14:35:54: INFO: Trying to store 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml' in string table
+14:35:54: INFO: Looking for file 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+14:35:54: INFO: User wants to talk to port '\\.\COM8'
+14:35:54: INFO: Took       0.00000000 seconds to open port
+14:35:54: INFO: Sorting TAGS to ensure order is <configure>,<erase>, others, <patch>,<power>
+14:35:54: INFO: Skipping <configure>
+14:35:54: INFO: Sending <power>
+
+14:35:54: INFO: TARGET SAID: 'INFO: Calling handler for power'
+14:35:54: INFO: ==============================================================
+14:35:54: INFO: Files used and their paths
+14:35:54: INFO:   1 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp/port_trace.txt'
+14:35:54: INFO:   2 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\tmp.xml'
+
+14:35:54: INFO:      _             (done)
+14:35:54: INFO:     | |                 
+14:35:54: INFO:   __| | ___  _ __   ___ 
+14:35:54: INFO:  / _` |/ _ \| '_ \ / _ \
+14:35:54: INFO: | (_| | (_) | | | |  __/
+14:35:54: INFO:  \__,_|\___/|_| |_|\___|
+14:35:54: INFO: {All Finished Successfully}
+
+14:35:54: INFO: Overall to target  0.032 seconds (0.00 Bps)
+
+Writing log, might take a minute
+
+
+Log at 'C:\Users\Administrator\Desktop\bbf\bff\bin\tmp\port_trace.txt'
+
+2025.05.05_14.35.54.277 [I] reboot.bat 重启完成.如需检查连接则检查  
+2025.05.05_14.35.54.348 [I] reboot.bat 重启完成.如需检查连接则检查  
