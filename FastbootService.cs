@@ -1,7 +1,7 @@
 using System;
 using System.Diagnostics;
 
-namespace BBKS6玩机工具箱
+namespace BBKS6 huang1057 kirin7098 nine0571 玩机工具箱
 {
     public class FastbootService
     {
@@ -27,10 +27,7 @@ namespace BBKS6玩机工具箱
                 Process process = new Process();
                 process.StartInfo.FileName = "fastboot";
                 process.StartInfo.Arguments = FastbootCommand;
-                process.StartInfo.UseShellExecute = false;
-                process.StartInfo.RedirectStandardOutput = true;
-                process.StartInfo.RedirectStandardError = true;
-                process.StartInfo.CreateNoWindow = true;
+                process.StartInfo.UseShellExecute =iii
 
                 process.Start();
                 string output = process.StandardOutput.ReadToEnd();
