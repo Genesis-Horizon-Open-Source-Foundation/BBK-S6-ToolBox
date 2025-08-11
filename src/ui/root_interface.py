@@ -3,6 +3,14 @@ from qfluentwidgets import PrimaryPushButton, TitleLabel, ScrollArea
 from qfluentwidgets import FluentIcon as FIF
 import subprocess
 import os
+import sys
+
+def get_resource_path():
+    if getattr(sys, 'frozen', False):
+        base_dir = os.path.dirname(sys.executable)
+    else:
+        base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    return os.path.join(base_dir, 'res')
 
 class RootInterface(ScrollArea):
     def __init__(self, parent=None):
@@ -16,8 +24,8 @@ class RootInterface(ScrollArea):
         self.setWidget(self.label)
         self.setWidgetResizable(True)
         
-        script_dir = os.path.join(os.path.dirname(__file__), '..', 'res')
-        self.root_script = os.path.normpath(os.path.join(script_dir, 's6root.bat'))
+        res_dir = get_resource_path()
+        self.root_script = os.path.normpath(os.path.join(res_dir, 's6root.bat'))
 
     def run_root_script(self):
         try:

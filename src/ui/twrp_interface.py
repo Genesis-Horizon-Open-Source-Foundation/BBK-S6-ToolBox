@@ -3,6 +3,14 @@ from qfluentwidgets import PrimaryPushButton, TitleLabel, ScrollArea, MessageBox
 from qfluentwidgets import FluentIcon as FIF
 import subprocess
 import os
+import sys
+
+def get_resource_path():
+    if getattr(sys, 'frozen', False):
+        base_dir = os.path.dirname(sys.executable)
+    else:
+        base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    return os.path.join(base_dir, 'res')
 
 class TWRPInterface(ScrollArea):
     def __init__(self, parent=None):
@@ -16,8 +24,8 @@ class TWRPInterface(ScrollArea):
         self.setWidget(self.label)
         self.setWidgetResizable(True)
         
-        script_dir = os.path.join(os.path.dirname(__file__), '..', 'res')
-        self.twrp_script = os.path.normpath(os.path.join(script_dir, 'fhtwrp.bat'))
+        res_dir = get_resource_path()
+        self.twrp_script = os.path.normpath(os.path.join(res_dir, 'fhtwrp.bat'))
 
     def run_twrp_script(self):
         try:
