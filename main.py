@@ -24,7 +24,7 @@ def check_and_download_resources():
         
         os.makedirs(res_dir, exist_ok=True)
         
-        resource_url = "https://down.ghosf.dpdns.org/download/EEBBK_S6/GSI/s6-toolbox_res.zip"
+        resource_url = "https://down.ghosf.dpdns.org/s6/ToolBox/s6-toolbox_res.zip"
         zip_path = os.path.join(res_dir, "s6-toolbox_res.zip")
         
         try:
